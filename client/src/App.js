@@ -22,9 +22,7 @@ function App() {
         <h1>Stefan Ionel</h1>
         <h1>Miloiu Cristi</h1>
         <h1>Furtuna Teo</h1>
-        <h1>Ruxi Martoiu</h1>
-        <h1>Ruxi Martoiu</h1>
-        <h1>Ruxi Martoiu</h1>
+        <h1>Ruxi Martoiu</h1> 
       </header>
     </div>
   );
