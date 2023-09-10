@@ -19,6 +19,7 @@ function App() {
         </a>
         <h1>Boscanici Adrian Gabriel</h1>
         <h1>Bogdan Dulgheriu gabriel</h1>
+        <h1>Stefan Ionel</h1>
       </header>
     </div>
   );
