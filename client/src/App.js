@@ -24,7 +24,8 @@ function App() {
         <h1>Furtuna Teo</h1>
         <h1>Andronie Laurentiu</h1>
         <h1>Ruxi Martoiu</h1> 
-        <h1>Dumitru Mihnea-Ioan</h1>
+        <h1>Radu Miu</h1>
+
       </header>
     </div>
   );
