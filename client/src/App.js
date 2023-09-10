@@ -19,7 +19,11 @@ function App() {
         </a>
         <h1>Boscanici Adrian Gabriel</h1>
         <h1>Bogdan Dulgheriu gabriel</h1>
+<<<<<<< HEAD
         <h1>Stefan Ionel</h1>
+=======
+        <h1>Miloiu Cristi</h1>
+>>>>>>> 026b1d45bfd6438edcf7105b2c7867dd07ca7e0b
       </header>
     </div>
   );
