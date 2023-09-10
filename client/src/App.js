@@ -23,6 +23,8 @@ function App() {
         <h1>Miloiu Cristi</h1>
         <h1>Furtuna Teo</h1>
         <h1>Andronie Laurentiu</h1>
+        <h1>Ruxi Martoiu</h1> 
+
       </header>
     </div>
   );
