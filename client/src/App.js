@@ -20,6 +20,7 @@ function App() {
         <h1>Boscanici Adrian Gabriel</h1>
         <h1>Bogdan Dulgheriu gabriel</h1>
         <h1>Miloiu Cristi</h1>
+        <h1>Furtuna Teo</h1>
       </header>
     </div>
   );
