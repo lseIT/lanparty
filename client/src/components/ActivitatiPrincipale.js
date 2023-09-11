@@ -1,10 +1,12 @@
 import React from "react";
-export default function ButuanePrincipale(){
+import {Button} from "reactstrap";
+export default function ButoanePrincipale(){
     return (
     <div>
         <Button
             color="primary"
             outline
+            className="buton1"
         >
             Liga Legando
         </Button>
