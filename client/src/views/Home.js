@@ -7,9 +7,13 @@ export default function Home() {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-1 bg-primary vh-100 left-0">Componenta Stânga (10%)</div>
-          <div className="col-10 w-full"><Header /></div>
-          <div className="col-1 bg-danger vh-100 fixed right-0">Componenta Dreapta (10%)</div>
+          <div className="col-md-1 col-2 bg-black vh-100 left-0">
+            <div className="col-md-6 col-8 bg-danger vh-100 mx-auto"></div>
+          </div>
+          <div className="col-md-10 col-8 w-full bg-black"><Header /></div>
+          <div className="col-md-1 col-2 bg-black vh-100 fixed right-0">
+            <div className="col-md-6 col-8 bg-primary vh-100 mx-auto"></div>
+          </div>
         </div>
       </div>
     </>
