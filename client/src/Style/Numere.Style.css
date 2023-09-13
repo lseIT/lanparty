@@ -1,0 +1,36 @@
+ /* Stiluri pentru pagina */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    /* Adăugăm poziționarea relativă pentru a alinia pseudo-elementul */
+}
+
+/* Stilizare pentru pseudo-elementul ::before */
+ #participant-count-section {
+    background-color: #007bff; /* Culoarea de fundal pentru secțiune */
+    color: #fff; /* Culoarea textului în secțiune */
+    padding: 20px; /* Spațiere interioară pentru secțiune */
+    border: 4px solid #fff; /* Bordură albă de 4px în jurul secțiunii */
+    border-radius: 10px; /* Colțuri rotunjite */
+}
+
+/* Stilizare pentru textul de impact */
+.impact-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px; /* Spațiere deasupra textului */
+    text-transform: uppercase; /* Transformăm textul în litere mari */
+    background-color: #ff5d38; /* Culoarea de fundal pentru textul de impact */
+    color: #fff; /* Culoarea textului */
+    padding: 5px 10px; /* Spațiere interioară pentru pătrat */
+    border-radius: 10px; /* Colțuri rotunjite pentru pătrat */
+}
