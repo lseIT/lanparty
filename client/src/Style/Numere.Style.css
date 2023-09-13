@@ -13,7 +13,14 @@
     padding: 40px;
     /* Adăugăm poziționarea relativă pentru a alinia pseudo-elementul */
 }
-
+/* În fișierul CSS al aplicației tale */
+.custom-space-between {
+    gap: 12; /* Poți ajusta valoarea pentru spațiul dorit */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
 /* Stilizare pentru pseudo-elementul ::before */
  #participant-count-section {
     background-color: #007bff; /* Culoarea de fundal pentru secțiune */
