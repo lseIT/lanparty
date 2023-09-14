@@ -7,6 +7,7 @@ import AboutUs from "../components/AboutUs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
+import ActivityButtons from "../components/ActivityButtons";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           <Header />
           <AboutUs />
           <AboutLanparty />
+          {/* <ActivityButtons/> */}
           <PartenerMedia />
           <Footer />
         </div>
