@@ -57,13 +57,11 @@ function TikTokButton( text1, text2 ) {
 function PartenerMedia () {
     return (
         <>
-        <center><h1 className="font-bold text-white">ALLSTARS GAMING: Partener Media</h1></center>
-        <center><a href="INSERT CUPRINS HERE"><h2 className=" font-neuropolxbold underline" style ={{color: '#78e800', fontWeight: 'bold'}}>CUPRINS</h2></a></center>
-        <center><img src="https://allstars-gaming.ro/wp-content/uploads/2022/07/logo-allstars-mic2.png"></img></center>
-        <br></br>
-        <br></br>
-        <br></br>
-        <center><h3 className='pb-32 text-white'>Pentru ediția curentă de LANParty, avem onoarea să colaborăm cu una dintre organizațiile eSports de prestigiu din România: <a className="text-[#78e800] underline" href="https://allstars-gaming.ro/">AllStars Gaming</a> ca partener media oficial.</h3></center>
+        <center className="pb-16"><h1 className="text-3xl font-bold text-white">ALLSTARS GAMING: Partener Media</h1></center>
+        <center className="pb-16"><a href="INSERT CUPRINS HERE"><h2 className="text-2xl font-neuropolxbold underline" style ={{color: '#78e800', fontWeight: 'bold'}}>CUPRINS</h2></a></center>
+        <center className="pb-16"><img src="https://allstars-gaming.ro/wp-content/uploads/2022/07/logo-allstars-mic2.png"></img></center>
+      
+        <center><h3 className='pb-16 text-white text-xl'>Pentru ediția curentă de LANParty, avem onoarea să colaborăm cu una dintre organizațiile eSports de prestigiu din România: <a className="text-[#78e800] underline" href="https://allstars-gaming.ro/">AllStars Gaming</a> ca partener media oficial.</h3></center>
         <center className="pb-16"><a href="INSERT LINK BUTON HERE"><button className="bg-[#78e800] text-black font-bold py-2 px-20 rounded"> BUTONUL NOSTRU    </button></a></center>
             <div className="flex justify-center pt-9">
                 {TikTokButton("50k", "TikTok")}

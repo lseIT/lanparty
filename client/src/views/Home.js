@@ -20,7 +20,7 @@ export default function Home() {
             <AboutUs />
             <AboutLanparty />
           </div>
-          <div className="col-md-10 col-8 w-full bg-black"><Header /><Numere /></div>
+          {/* <div className="col-md-10 col-8 w-full bg-black"><Header /><Numere /></div> */}
           <div className="col-md-10 col-8 w-full bg-black"><Header />
           <PartenerMedia /></div>
           <div className="col-md-1 col-2 bg-black vh-100 fixed right-0">
