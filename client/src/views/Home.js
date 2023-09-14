@@ -7,6 +7,7 @@ import AboutUs from "../components/AboutUs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
+import Galery from "../components/Galery";
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
           <AboutUs />
           <AboutLanparty />
           <PartenerMedia />
-          <Footer />
+          <Galery /> {/*//Made by me :**/}
+          <Footer /> {/*//Made by me :**/}
         </div>
         <div className="col-span-1 bg-gray-200 h-full">
           <div className="grid grid-cols-3 w-full">
