@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import ReactDOM from "react-dom/client";
-import { slides } from "../config/configGalery";
+import { slides } from "../config/configGallery";
 
 export default function Galery() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,7 +41,7 @@ export default function Galery() {
         ></div>
         {/* Left Arrow */}
         <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-          <BsChevronCompactLeft onClick={prevSlide} size={30} />
+          <BsChevronCompactLeft onClick={prevSlide} />
         </div>
         {/* Right Arrow */}
         <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
