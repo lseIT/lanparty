@@ -1,5 +1,5 @@
 import React from "react";
-//TODO Create background
+
 export default function Background() {
     //array cu imaginile folosite
     /*
@@ -28,7 +28,7 @@ export default function Background() {
         alignItems: 'center',
     }
     return (
-        //TODO Add background image
+
         //TODO make it change occasionally
         <div style={containerStyle}>
 
