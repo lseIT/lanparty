@@ -19,7 +19,7 @@ export default function AboutUs() {
   }, [isInView]);
   return (
     <>
-      <Parallax strength={400} className="my-10 py-10">
+      <Parallax strength={400} className="my-10 py-10 ">
         <Background className="relative w-screen h-screen">
           <img
             src={LseBanner}

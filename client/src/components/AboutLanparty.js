@@ -29,7 +29,7 @@ export default function AboutLanparty() {
         >
           <div className="flex justify-center">
             <h1 className="uppercase text-2xl md:text-3xl font-bold whitespace-nowrap p-4 mb-6 text-white">
-              Despre <span className=" text-[#78e800]">Lanparty</span>
+              Despre <span className=" text-color-accent">Lanparty</span>
             </h1>
           </div>
           <div className="text-white text-xl md:text-3xl">
