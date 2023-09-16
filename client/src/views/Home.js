@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
 import Galery from "../components/Galery";
+import Cosplay from "../components/Cosplay";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           <AboutUs />
           <AboutLanparty />
           <PartenerMedia />
+          <Cosplay />
           <Galery /> {/*//Made by me :**/}
           <Footer /> {/*//Made by me :**/}
         </div>
