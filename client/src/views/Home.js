@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
 import Galery from "../components/Galery";
+import ButoanePrincipale from "../components/ActivitatiPrincipale";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           <Header />
           <AboutUs />
           <AboutLanparty />
+          <ButoanePrincipale/>
           <PartenerMedia />
           <Galery /> {/*//Made by me :**/}
           <Footer /> {/*//Made by me :**/}
