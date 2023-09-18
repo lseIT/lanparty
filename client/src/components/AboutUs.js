@@ -20,13 +20,7 @@ export default function AboutUs() {
   return (
     <>
       <Parallax strength={400} className="my-10 py-10 ">
-        <Background className="relative w-screen h-screen">
-          <img
-            src={LseBanner}
-            alt="LSE Banner"
-            className="object-cover h-screen w-screen"
-          />
-        </Background>
+        <Background className="relative w-screen h-screen"></Background>
         <motion.div
           ref={ref}
           id="projects"
@@ -45,7 +39,7 @@ export default function AboutUs() {
             <div className="flex justify-center mt-6">
               <img src={LogoWhite} alt="Logo" />
             </div>
-            <div className="self-center justify-center flex font-bold whitespace-nowrap text-white text-2xl md:text-3xl pt-6">
+            <div className="self-center justify-center flex font-bold text-center text-white text-2xl md:text-3xl pt-6">
               <p>Liga Studenților Electroniști</p>
             </div>
             <div>
@@ -59,35 +53,10 @@ export default function AboutUs() {
               </p>
             </div>
             <div>
-              <div className=" lg:flex justify-center md:gap-10 grid grid-cols-2 ">
-                <AboutUsCard name="ExpoJobs" logo={LogoWhite} />
+              <div className=" lg:flex justify-center md:gap-10 grid grid-cols-1 place-items-center ">
+                <AboutUsCard name="Electron" logo={LogoWhite} />
                 <AboutUsCard name="RoboChallenge" logo={LogoWhite} />
-              </div>
-              <div className="flex justify-center p-8">
-                <a
-                  href="https://lsebucuresti.org/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className=" w-fit bg-white rounded-xl flex justify-center">
-                    <div className=" bg-[#78e800] rounded-lg">
-                      <img
-                        src={LogoWhite}
-                        className="md:h-9 h-7 md:m-2 m-1"
-                        alt="LSE Logo"
-                      />
-                    </div>
-                    <div className="md:p-2 md:px-5 p-1">
-                      <p className=" md:text-2xl font-bold text-sm uppercase">
-                        ELECTRON{" "}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="lg:flex justify-center md:gap-10 grid grid-cols-2 ">
-                <AboutUsCard name="Aleargă pentru viață" logo={LogoWhite} />
-                <AboutUsCard name="MobilPro" logo={LogoWhite} />
+                <AboutUsCard name="Aleargă pentru mama" logo={LogoWhite} />
               </div>
             </div>
           </div>
