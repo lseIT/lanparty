@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-function TikTokButton(text1, text2) {
-  const totalLength = text1.length + text2.length;
-  const ratio1 = text1.length / totalLength;
-  const ratio2 = 1 - ratio1;
+function TikTokButton(followers, appName) {
+  const totalLength = followers.length + appName.length;
+  const whiteRatio = followers.length / totalLength;
+  const greenRatio = 1 - whiteRatio;
 
   return (
     <button className="flex mx-4 hover:duration-300">
@@ -16,24 +16,24 @@ function TikTokButton(text1, text2) {
       >
         <span
           className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
-          style={{ flex: ratio1 }}
+          style={{ flex: whiteRatio }}
         >
-          {text1}
+          {followers}
         </span>
         <span
           className="rounded-lg text-black hover:bg-[#325e1f] hover:duration-300 bg-[#78e800] px-10 py-3"
-          style={{ flex: ratio2 }}
+          style={{ flex: greenRatio }}
         >
-          {text2}
+          {appName}
         </span>
       </a>
     </button>
   );
 }
-function InstagramButton(text1, text2) {
-  const totalLength = text1.length + text2.length;
-  const ratio1 = text1.length / totalLength;
-  const ratio2 = 1 - ratio1;
+function InstagramButton(followers, appName) {
+  const totalLength = followers.length + appName.length;
+  const whiteRatio = followers.length / totalLength;
+  const greenRatio = 1 - whiteRatio;
 
   return (
     <button className="flex mx-4 hover:duration-300">
@@ -45,24 +45,24 @@ function InstagramButton(text1, text2) {
       >
         <span
           className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
-          style={{ flex: ratio1 }}
+          style={{ flex: whiteRatio }}
         >
-          {text1}
+          {followers}
         </span>
         <span
           className="rounded-lg text-black hover:bg-[#325e1f] hover:duration-300 bg-[#78e800] px-10 py-3"
-          style={{ flex: ratio2 }}
+          style={{ flex: greenRatio }}
         >
-          {text2}
+          {appName}
         </span>
       </a>
     </button>
   );
 }
-function YouTubeButton(text1, text2) {
-  const totalLength = text1.length + text2.length;
-  const ratio1 = text1.length / totalLength;
-  const ratio2 = 1 - ratio1;
+function YouTubeButton(followers, appName) {
+  const totalLength = followers.length + appName.length;
+  const whiteRatio = followers.length / totalLength;
+  const greenRatio = 1 - whiteRatio;
 
   return (
     <button className="flex rounded-lg hover:duration-300">
@@ -74,15 +74,15 @@ function YouTubeButton(text1, text2) {
       >
         <span
           className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
-          style={{ flex: ratio1 }}
+          style={{ flex: whiteRatio }}
         >
-          {text1}
+          {followers}
         </span>
         <span
           className="rounded-lg text-black hover:bg-[#325e1f] hover:duration-300 bg-[#78e800] px-10 py-3"
-          style={{ flex: ratio2 }}
+          style={{ flex: greenRatio }}
         >
-          {text2}
+          {appName}
         </span>
       </a>
     </button>
@@ -144,7 +144,7 @@ function PartenerMedia() {
             >
               AllStars Gaming
             </a>
-            &nbsp;ca partener media oficial.
+            ca partener media oficial.
           </h3>
         </div>
         <div className="pb-16 flex justify-center">
