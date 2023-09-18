@@ -24,18 +24,28 @@ export default function Home() {
         </div>
         <div className="col-span-10 bg-black h-screen overflow-auto no-scrollbar ">
           <Header />
+
           <div id="AboutLSE" className=" pt-0">
           <AboutUs />
           </div>
+
           <AboutLanparty />
+
+          <div id="Inscrieri" className=" pt-0">
           <ButoanePrincipale/>
+          
+          <Cosplay />
+          </div>
+          
           <div id="PartenerMedia" className=" pt-32">
           <PartenerMedia />
           </div>
-          <Cosplay />
+
+          
           <div id="Galerie" className=" pt-32">
           <Galery /> {/*//Made by me :**/}
           </div>
+          
           <Footer /> {/*//Made by me :**/}
         </div>
         <div className="col-span-1 bg-gray-200 h-full">
