@@ -125,8 +125,8 @@ function PartenerMedia() {
         </button>
       </center>
       <div className="flex justify-center flex-wrap pt-9">
-        <span className="m-3">{TikTokButton("50k", "TikTok")}</span>
-        <span className="m-3">{InstagramButton("116k", "Instagram")}</span>
+        <span className="m-3">{TikTokButton("171k", "TikTok")}</span>
+        <span className="m-3">{InstagramButton("117k", "Instagram")}</span>
         <span className="m-3">{YouTubeButton("1.07M", "YouTube")}</span>
       </div>
     </>

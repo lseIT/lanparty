@@ -9,12 +9,13 @@ function SignupButton() {
       href={googleFormLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-[#78e800] text-black text-xl px-80 py-6 rounded-lg hover:bg-green-600 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 hover: duration-300 font-bold"
+      className="bg-[#78e800] text-black flex justify-center items-center w-full text-xl py-6 rounded-lg hover:bg-green-600 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 hover:duration-300 font-bold whitespace-nowrap"
     >
       Înscrie-te
     </a>
   );
 }
+
 
 function Cosplay() {
   return (
@@ -24,7 +25,7 @@ function Cosplay() {
         <div className="relative w-128 rounded-lg mx-auto mt-16">
           <img className="w-full rounded-lg" src={Poza} alt="Descriere pentru imagine" />
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            <span className="text-3xl text-white hover:duration-300 hover:bg-opacity-0 bg-black px-2 py-1 rounded">
+            <span className="md:text-3xl text-xs text-white hover:duration-300 hover:bg-opacity-0 bg-black px-2 py-1 rounded">
             Competiția cosplay la LanParty LSE: tehnologia întâlnește arta și pasiunea.
 
             </span>
@@ -37,6 +38,6 @@ function Cosplay() {
     </>
   );
 }
-//vrem vreme buna muie lu furtuna ce nu ne a lasat sa punem animatia
+//vrem vreme buna muie lu furtuna ca nu ne-a lasat sa punem animatia
 
 export default Cosplay;
