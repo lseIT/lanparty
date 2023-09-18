@@ -11,6 +11,8 @@ function TikTokButton(text1, text2) {
       <a
         className="font-bold no-underline"
         href="https://www.tiktok.com/@allstarsgamingro"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <span
           className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
@@ -38,6 +40,8 @@ function InstagramButton(text1, text2) {
       <a
         className="font-bold no-underline"
         href="https://www.instagram.com/allstarsgamingro/"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <span
           className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
@@ -65,6 +69,8 @@ function YouTubeButton(text1, text2) {
       <a
         className="font-bold no-underline"
         href="https://www.youtube.com/channel/UCju1YCClDspmThj_iifpeUw"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <span
           className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
@@ -108,39 +114,44 @@ function PartenerMedia() {
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
       >
-        <center className="pb-16">
-          <h1 className="text-3xl font-bold text-white">
+        <div className="flex justify-center pb-16">
+          <h1 className="flex justify-center text-3xl font-bold text-white">
             ALLSTARS GAMING: Partener Media
           </h1>
-        </center>
-        <center className="pb-16 transform transition-transform duration-600 hover:scale-110">
-          <a href="https://allstars-gaming.ro/">
+        </div>
+        <div className="flex justify-center pb-16 transform transition-transform duration-600 hover:scale-110">
+          <a
+            href="https://allstars-gaming.ro/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="https://allstars-gaming.ro/wp-content/uploads/2022/07/logo-allstars-mic2.png"
-              alt=""
+              alt="Logo Allstars"
             ></img>
           </a>
-        </center>
+        </div>
 
-        <center>
-          <h3 className="pb-16 text-white text-xl">
+        <div className="flex justify-center">
+          <h3 className="flex justify-center pb-16 text-white text-xl">
             Pentru ediția curentă de LANParty, avem onoarea să colaborăm cu una
-            dintre organizațiile eSports de prestigiu din România:{" "}
+            dintre organizațiile eSports de prestigiu din România:
             <a
-              className="text-[#78e800] underline"
+              className="text-[#78e800] underline whitespace-nowrap"
               href="https://allstars-gaming.ro/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               AllStars Gaming
-            </a>{" "}
-            ca partener media oficial.
+            </a>
+            &nbsp;ca partener media oficial.
           </h3>
-        </center>
-        <center className="pb-16">
+        </div>
+        <div className="pb-16 flex justify-center">
           <button className="bg-[#78e800] text-black font-bold py-2 px-20 rounded">
-            {" "}
-            REACH ESTIMATIV{" "}
+            REACH ESTIMATIV
           </button>
-        </center>
+        </div>
         <div className="flex justify-center flex-wrap pt-9">
           <span className="m-3">{TikTokButton("171k", "TikTok")}</span>
           <span className="m-3">{InstagramButton("117k", "Instagram")}</span>

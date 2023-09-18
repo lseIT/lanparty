@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import Poza from "../assets/img/Colaj.png";
+import ColajCosplay from "../assets/img/ColajCosplay.webp";
 
 function SignupButton() {
   const googleFormLink = "https://docs.google.com/forms/d/e/..."; // Înlocuiți cu linkul dvs.
@@ -43,24 +43,23 @@ function Cosplay() {
           animate={mainControls}
           transition={{ duration: 0.5, delay: 0.25 }}
         >
-          {/* <center className="text-3xl font-bold text-[#78e800]">COSPLAY</center> */}
           <div className="flex-wrap rounded-lg">
             <div className="relative w-128 rounded-lg mx-auto mt-16">
               <img
                 className="w-full rounded-lg hover:blur-sm transition duration-300"
-                src={Poza}
-                alt="Descriere pentru imagine"
+                src={ColajCosplay}
+                alt="Imagine cu un colaj cosplay"
               />
               <div className="pointer-events-none absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
                 <span
                   style={{
-                    textShadow: '-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black'
-                }}
+                    textShadow:
+                      "-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black",
+                  }}
                   className="text-5xl pb-16 text-stroke-3 font-bold text-[#78e800] mb-4"
                 >
                   COSPLAY
-                </span>{" "}
-                {/* Adăugat aici */}
+                </span>
                 <span className="md:text-3xl text-xs text-white hover:duration-300 hover:bg-opacity-0 bg-black px-2 py-1 rounded">
                   Competiția cosplay la LanParty LSE: tehnologia întâlnește arta
                   și pasiunea.
