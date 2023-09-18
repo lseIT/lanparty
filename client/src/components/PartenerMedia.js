@@ -11,13 +11,13 @@ function TikTokButton(text1, text2) {
         href="https://www.tiktok.com/@allstarsgamingro"
       >
         <span
-          className="rounded-l-lg text-white hover:bg-[#8e3535]  bg-red-500 px-10 py-2"
+          className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
           style={{ flex: ratio1 }}
         >
           {text1}
         </span>
         <span
-          className="rounded-lg text-white hover:bg-[#3d4cae] bg-blue-500 px-10 py-3"
+          className="rounded-lg text-black hover:bg-[#325e1f] hover:duration-300 bg-[#78e800] px-10 py-3"
           style={{ flex: ratio2 }}
         >
           {text2}
@@ -38,13 +38,13 @@ function InstagramButton(text1, text2) {
         href="https://www.instagram.com/allstarsgamingro/"
       >
         <span
-          className="rounded-l-lg text-white hover:bg-[#8e3535] bg-red-500 px-10 py-2"
+          className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
           style={{ flex: ratio1 }}
         >
           {text1}
         </span>
         <span
-          className="rounded-lg text-white hover:bg-[#3d4cae] bg-blue-500 px-10 py-3"
+          className="rounded-lg text-black hover:bg-[#325e1f] hover:duration-300 bg-[#78e800] px-10 py-3"
           style={{ flex: ratio2 }}
         >
           {text2}
@@ -65,13 +65,13 @@ function YouTubeButton(text1, text2) {
         href="https://www.youtube.com/channel/UCju1YCClDspmThj_iifpeUw"
       >
         <span
-          className="rounded-l-lg text-white hover:bg-[#8e3535] bg-red-500 px-10 py-2"
+          className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
           style={{ flex: ratio1 }}
         >
           {text1}
         </span>
         <span
-          className="rounded-lg text-white hover:bg-[#3d4cae] bg-blue-500 px-10 py-3"
+          className="rounded-lg text-black hover:bg-[#325e1f] hover:duration-300 bg-[#78e800] px-10 py-3"
           style={{ flex: ratio2 }}
         >
           {text2}
