@@ -7,6 +7,9 @@ module.exports = {
         "color-ev": "#060c2e",
         "color-accent": "#78e800",
       },
+      blur: {
+        xs: "2px",
+      },
     },
   },
   plugins: [],
