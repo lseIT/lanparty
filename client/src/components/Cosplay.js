@@ -46,7 +46,7 @@ function Cosplay() {
           <div className="flex-wrap rounded-lg">
             <div className="relative w-128 rounded-lg mx-auto mt-16">
               <img
-                className="w-full rounded-lg hover:blur-sm transition duration-300"
+                className="w-full rounded-lg hover:blur-[2px] transition duration-300"
                 src={ColajCosplay}
                 alt="Imagine cu un colaj cosplay"
               />
