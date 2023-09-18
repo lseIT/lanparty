@@ -9,7 +9,8 @@ import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
 import Galery from "../components/Galery";
 import ButoanePrincipale from "../components/ActivitatiPrincipale";
-
+import Cosplay from "../components/Cosplay";
+import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
 export default function Home() {
   return (
     <>
@@ -17,23 +18,30 @@ export default function Home() {
         <div className="col-span-1 bg-gray-200 h-full">
           <div className="grid grid-cols-3 w-full">
             <div className=" col-span-1 bg-black h-screen"></div>
-            <div className=" col-span-1 bg-color-accent h-screen"></div>
+            <img src={Bara} className=" col-span-1 bg-black h-screen"/>
             <div className=" col-span-1 bg-black h-screen"></div>
           </div>
         </div>
         <div className="col-span-10 bg-black h-screen overflow-auto no-scrollbar ">
           <Header />
+          <div id="AboutLSE" className=" pt-0">
           <AboutUs />
+          </div>
           <AboutLanparty />
           <ButoanePrincipale/>
+          <div id="PartenerMedia" className=" pt-32">
           <PartenerMedia />
+          </div>
+          <Cosplay />
+          <div id="Galerie" className=" pt-32">
           <Galery /> {/*//Made by me :**/}
+          </div>
           <Footer /> {/*//Made by me :**/}
         </div>
         <div className="col-span-1 bg-gray-200 h-full">
           <div className="grid grid-cols-3 w-full">
             <div className=" col-span-1 bg-black h-screen"></div>
-            <div className=" col-span-1 bg-color-accent h-screen"></div>
+            <img src={Bara} className=" col-span-1 bg-black h-screen"/>
             <div className=" col-span-1 bg-black h-screen"></div>
           </div>
         </div>
