@@ -1,5 +1,5 @@
 import React from "react";
-import LANParty_logo from "../assets/img/LogoWhite.webp";
+import LANParty_logo from "../assets/img/webp/General usage/logo LANPARTY.webp";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { transform } from "framer-motion";
@@ -9,15 +9,17 @@ export default function Header() {
     <header className="bg-black border-4 rounded-lg opacity-80 border-color-accent sticky top-0 z-10 w-full">
     <div className="mx-auto w-full px-5 py-4 md:px-8 md:py-0 lg:px-8">
       <div className="md:flex md:items-center md:justify-between">
-        <div className="text-center md:text-left">
-            <img src={LANParty_logo} className="h-10"></img>
+        <div className="text-center md:text-left flex justify-center">
+            <img src={LANParty_logo} className="h-20"></img>
         </div>
   
         <div className="mt-0 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
           <button
             className="block rounded-lg px-2 py-2 text-sm font-medium text-white transition hover:bg-color-accent hover:opacity-100 focus:outline-none focus:ring"
             type="button"
-           
+            onClick={() => {
+              window.location.href = "#Inscrieri";
+            }}
           >
             <span className="text-sm font-medium"> Înscrie-te și tu </span>
           </button>
@@ -26,10 +28,10 @@ export default function Header() {
             className="block rounded-lg px-2 py-2 text-sm font-medium text-white transition hover:bg-color-accent hover:opacity-100 focus:outline-none focus:ring"
             type="button"
             onClick={() => {
-              window.location.href = "#AboutLSE";
+              window.location.href = "#AboutLAN";
             }}
           >
-            About LSE
+            About LANParty
           </button>
 
           <button
