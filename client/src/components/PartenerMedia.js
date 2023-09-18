@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
+
 function TikTokButton(text1, text2) {
   const totalLength = text1.length + text2.length;
   const ratio1 = text1.length / totalLength;
@@ -82,53 +84,69 @@ function YouTubeButton(text1, text2) {
 }
 
 function PartenerMedia() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+  const slideControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+      slideControls.start("visible");
+    }
+  }, [isInView, mainControls, slideControls]);
   return (
     <>
-      <center className="pb-16">
-        <h1 className="text-3xl font-bold text-white">
-          ALLSTARS GAMING: Partener Media
-        </h1>
-      </center>
-      <center className="pb-16">
-        <a id="backToTop" href="#">
-          <h2
-            className="text-2xl font-neuropolxbold underline"
-            style={{ color: "#78e800", fontWeight: "bold" }}
-          >
-            CUPRINS
-          </h2>
-        </a>
-      </center>
-      <center className="pb-16 transform transition-transform duration-600 hover:scale-110">
-        <a href="https://allstars-gaming.ro/">
-          <img src="https://allstars-gaming.ro/wp-content/uploads/2022/07/logo-allstars-mic2.png"></img>
-        </a>
-      </center>
+      <motion.div
+        ref={ref}
+        id="projects"
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.5, delay: 0.25 }}
+      >
+        <center className="pb-16">
+          <h1 className="text-3xl font-bold text-white">
+            ALLSTARS GAMING: Partener Media
+          </h1>
+        </center>
+        <center className="pb-16 transform transition-transform duration-600 hover:scale-110">
+          <a href="https://allstars-gaming.ro/">
+            <img
+              src="https://allstars-gaming.ro/wp-content/uploads/2022/07/logo-allstars-mic2.png"
+              alt=""
+            ></img>
+          </a>
+        </center>
 
-      <center>
-        <h3 className="pb-16 text-white text-xl">
-          Pentru ediția curentă de LANParty, avem onoarea să colaborăm cu una
-          dintre organizațiile eSports de prestigiu din România:{" "}
-          <a
-            className="text-[#78e800] underline"
-            href="https://allstars-gaming.ro/"
-          >
-            AllStars Gaming
-          </a>{" "}
-          ca partener media oficial.
-        </h3>
-      </center>
-      <center className="pb-16">
-        <button className="bg-[#78e800] text-black font-bold py-2 px-20 rounded">
-          {" "}
-          REACH ESTIMATIV{" "}
-        </button>
-      </center>
-      <div className="flex justify-center flex-wrap pt-9">
-        <span className="m-3">{TikTokButton("171k", "TikTok")}</span>
-        <span className="m-3">{InstagramButton("117k", "Instagram")}</span>
-        <span className="m-3">{YouTubeButton("1.07M", "YouTube")}</span>
-      </div>
+        <center>
+          <h3 className="pb-16 text-white text-xl">
+            Pentru ediția curentă de LANParty, avem onoarea să colaborăm cu una
+            dintre organizațiile eSports de prestigiu din România:{" "}
+            <a
+              className="text-[#78e800] underline"
+              href="https://allstars-gaming.ro/"
+            >
+              AllStars Gaming
+            </a>{" "}
+            ca partener media oficial.
+          </h3>
+        </center>
+        <center className="pb-16">
+          <button className="bg-[#78e800] text-black font-bold py-2 px-20 rounded">
+            {" "}
+            REACH ESTIMATIV{" "}
+          </button>
+        </center>
+        <div className="flex justify-center flex-wrap pt-9">
+          <span className="m-3">{TikTokButton("171k", "TikTok")}</span>
+          <span className="m-3">{InstagramButton("117k", "Instagram")}</span>
+          <span className="m-3">{YouTubeButton("1.07M", "YouTube")}</span>
+        </div>
+      </motion.div>
     </>
   );
 }
