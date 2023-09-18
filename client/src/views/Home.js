@@ -8,9 +8,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
 import Galery from "../components/Galery";
+import ButoanePrincipale from "../components/ActivitatiPrincipale";
 import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
-
 export default function Home() {
   return (
     <>
@@ -28,6 +28,7 @@ export default function Home() {
           <AboutUs />
           </div>
           <AboutLanparty />
+          <ButoanePrincipale/>
           <div id="PartenerMedia" className=" pt-32">
           <PartenerMedia />
           </div>
