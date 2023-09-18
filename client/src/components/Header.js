@@ -28,10 +28,10 @@ export default function Header() {
             className="block rounded-lg px-2 py-2 text-sm font-medium text-white transition hover:bg-color-accent hover:opacity-100 focus:outline-none focus:ring"
             type="button"
             onClick={() => {
-              window.location.href = "#AboutLSE";
+              window.location.href = "#AboutLAN";
             }}
           >
-            About LSE
+            About LANParty
           </button>
 
           <button

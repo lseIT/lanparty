@@ -25,28 +25,35 @@ export default function Home() {
         <div className="col-span-10 bg-black h-screen overflow-auto no-scrollbar ">
           <Header />
 
-          <div id="AboutLSE" className=" pt-0">
-          <AboutUs />
-          </div>
-
-          <AboutLanparty />
+          {/* Banner */}
 
           <div id="Inscrieri" className=" pt-0">
           <ButoanePrincipale/>
-          
+          {/* Act. secundare */}
           <Cosplay />
           </div>
-          
+
+          <div id="AboutLAN" className=" pt-0">
+          <AboutLanparty />
+          </div>
+
+          {/* Ambasadori */}
+
           <div id="PartenerMedia" className=" pt-32">
           <PartenerMedia />
           </div>
 
+          {/* Sponsori */}
+
+          <AboutUs />
           
+          {/* Testimoniale */}
+
           <div id="Galerie" className=" pt-32">
-          <Galery /> {/*//Made by me :**/}
+          <Galery /> 
           </div>
           
-          <Footer /> {/*//Made by me :**/}
+          <Footer />
         </div>
         <div className="col-span-1 bg-gray-200 h-full">
           <div className="grid grid-cols-3 w-full">
