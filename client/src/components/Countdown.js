@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 
-const Countdown = () => {
+const Countdown = ({numarMinute}) => {
   const [countdownDate, setCountdownDate] = useState(
-    new Date("09/20/2023").getTime()
+   (new Date("09/20/2023").getTime() + (numarMinute * 60 * 1000))
   );
+
   const [state, setState] = useState({
     days: 0,
     hours: 0,
@@ -19,8 +20,9 @@ const Countdown = () => {
     if (countdownDate) {
       const currentTime = new Date().getTime();
 
-      const distanceToDate = countdownDate - currentTime;
 
+      const distanceToDate = countdownDate - currentTime;
+                                            
       let days = Math.floor(distanceToDate / (1000 * 60 * 60 * 24));
       let hours = Math.floor(
         (distanceToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)

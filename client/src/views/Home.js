@@ -27,8 +27,9 @@ export default function Home() {
           <Header />
 
           {/* Banner */}
-          <Countdown/>
           <div id="Inscrieri" className=" pt-0">
+          {/* De la ora 00 : 00 se incepe calculul */}
+          <Countdown numarMinute = {0} /> 
           <ButoanePrincipale/>
           {/* Act. secundare */}
           <Cosplay />
