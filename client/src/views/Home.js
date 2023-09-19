@@ -9,6 +9,7 @@ import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
 import Galery from "../components/Galery";
 import ButoanePrincipale from "../components/ActivitatiPrincipale";
+import ActivitatiSecundare from "../components/ActivitatiSecundare";
 import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
 export default function Home() {
@@ -29,7 +30,9 @@ export default function Home() {
 
           <div id="Inscrieri" className=" pt-0">
           <ButoanePrincipale/>
-          {/* Act. secundare */}
+
+          <ActivitatiSecundare/>
+          
           <Cosplay />
           </div>
 
