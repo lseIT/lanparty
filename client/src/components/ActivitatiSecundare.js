@@ -19,8 +19,7 @@ export default function JocuriSecundare()
         <ul id="cards">
             <li className="lol">
                 <a target="_blank" href="https://support.riotgames.com/hc/en-us">
-                    <div className="w-full h-full"><img src={bg_tft}/></div>
-                    
+                    <div className="w-full h-full"><img src={bg_tft} alt="Imagine TFT-TeamFight Tactics"/></div>
                     <div className="hover">
                         <img src={logo_tft}></img>
                         <label>
@@ -30,14 +29,12 @@ export default function JocuriSecundare()
                             Pentru inscriere
                         </label>
                     </div>
-                    
                 </a>
             </li>
     
             <li className="ea_sports" >
                 <a target="_blank" href="https://www.counter-strike.net/news">
-                    <div className="w-full h-full"><img src={ea}/></div>
-                    
+                    <div className="w-full h-full"><img src={ea} alt="Imagine Ea Sports FC"/></div>
                     <div className="hover">
                         <img src={ea}/>
                         <label>
@@ -47,14 +44,12 @@ export default function JocuriSecundare()
                             Pentru inscriere
                         </label>
                     </div>
-                    
                 </a>
             </li>
 
             <li className="hearthstone">
                 <a target="_blank" href="https://www.counter-strike.net/news">
-                    <div className="w-full h-full"><img src={hearth}/></div>
-
+                    <div className="w-full h-full"><img src={hearth} alt="Imagine Hearthstone"/></div>
                     <div className="hover">
                         <img src={hearth}/>
                         <label>
@@ -64,17 +59,14 @@ export default function JocuriSecundare()
                             Pentru inscriere
                         </label>
                     </div>
-
                 </a>
-
             </li>
 
             <li className="mortal_kombat">
                 <a target="_blank" href="https://www.counter-strike.net/news">
                     <div className="w-full h-full"><img src={mortal}/></div>
-
                     <div className="hover">
-                        <img src={mortal}/>
+                        <img src={mortal} alt="Imagine Mortal Kombat"/>
                         <label>
                             Click aici
                         </label>
@@ -82,15 +74,12 @@ export default function JocuriSecundare()
                             Pentru inscriere
                         </label>
                     </div>
-
                 </a>
-
             </li>
 
             <li className="clash">
                 <a target="_blank" href="https://www.counter-strike.net/news">
-                    <div className="w-full h-full"><img src={clash}/></div>
-
+                    <div className="w-full h-full"><img src={clash} alt="Imagine Clash Royalecheckout"/></div>
                     <div className="hover">
                         <img src={clash}/>
                         <label>
@@ -100,14 +89,9 @@ export default function JocuriSecundare()
                             Pentru inscriere
                         </label>
                     </div>
-
                 </a>
-
             </li>
-            
+
         </ul>    
-    
-    
-    
         );
 }
