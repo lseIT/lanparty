@@ -15,7 +15,6 @@ import bg_tft from "../assets/img/webp/activitatisecundare/teamfight.webp";
 export default function JocuriSecundare()
 {
     return (
-    
         <ul id="cards">
             <li className="lol">
                 <a target="_blank" href="https://support.riotgames.com/hc/en-us">
@@ -31,7 +30,6 @@ export default function JocuriSecundare()
                     </div>
                 </a>
             </li>
-    
             <li className="ea_sports" >
                 <a target="_blank" href="https://www.counter-strike.net/news">
                     <div className="w-full h-full"><img src={ea} alt="Imagine Ea Sports FC"/></div>
@@ -46,7 +44,6 @@ export default function JocuriSecundare()
                     </div>
                 </a>
             </li>
-
             <li className="hearthstone">
                 <a target="_blank" href="https://www.counter-strike.net/news">
                     <div className="w-full h-full"><img src={hearth} alt="Imagine Hearthstone"/></div>
@@ -61,7 +58,6 @@ export default function JocuriSecundare()
                     </div>
                 </a>
             </li>
-
             <li className="mortal_kombat">
                 <a target="_blank" href="https://www.counter-strike.net/news">
                     <div className="w-full h-full"><img src={mortal}/></div>
@@ -76,10 +72,9 @@ export default function JocuriSecundare()
                     </div>
                 </a>
             </li>
-
             <li className="clash">
                 <a target="_blank" href="https://www.counter-strike.net/news">
-                    <div className="w-full h-full"><img src={clash} alt="Imagine Clash Royalecheckout"/></div>
+                    <div className="w-full h-full"><img src={clash} alt="Imagine Clash Royale"/></div>
                     <div className="hover">
                         <img src={clash}/>
                         <label>
@@ -91,7 +86,6 @@ export default function JocuriSecundare()
                     </div>
                 </a>
             </li>
-
         </ul>    
         );
 }
