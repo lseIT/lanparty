@@ -1,69 +1,87 @@
-import React from "react";
-import LANParty_logo from "../assets/img/webp/General usage/logo LANPARTY.webp";
+"use client";
+import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+export default function NavBar() {
+  const [nav, setNav] = useState(false);
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import { transform } from "framer-motion";
-
-export default function Header() {
+  const handleNav = () => {
+    setNav(!nav);
+  };
   return (
-    <header className="bg-black border-4 rounded-lg opacity-80 border-color-accent sticky top-0 z-10 w-full">
-    <div className="mx-auto w-full px-5 py-4 md:px-8 md:py-0 lg:px-8">
-      <div className="md:flex md:items-center md:justify-between">
-        <div className="text-center md:text-left flex justify-center">
-            <img src={LANParty_logo} className="h-20"></img>
-        </div>
-  
-        <div className="mt-0 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-          <button
-            className="block rounded-lg px-2 py-2 text-sm font-medium text-white transition hover:bg-color-accent hover:opacity-100 focus:outline-none focus:ring"
-            type="button"
-            onClick={() => {
-              window.location.href = "#Inscrieri";
-            }}
+    <>
+      <div className=" sticky top-0 z-10 rounded-div flex items-center justify-between h-20 font-bold w-full bg-black text-white">
+        <h1 className="text-2xl uppercase">
+          Lan<span className="text-color-accent">Party</span>
+        </h1>
+        <div className=" hidden md:block">
+          <a
+            href="#Inscrieri"
+            className=" p-4 duration-300 hover:text-color-accent no-underline"
           >
-            <span className="text-sm font-medium"> Înscrie-te și tu </span>
-          </button>
-  
-          <button
-            className="block rounded-lg px-2 py-2 text-sm font-medium text-white transition hover:bg-color-accent hover:opacity-100 focus:outline-none focus:ring"
-            type="button"
-            onClick={() => {
-              window.location.href = "#AboutLAN";
-            }}
+            {" "}
+            Înscrieri
+          </a>
+          <a
+            href="#AboutLAN"
+            className=" no-underline p-4 duration-300 hover:text-color-accent px-5 py-2 ml-2 rounded-2xl shaodw-lg hover:shadow-2xl"
           >
-            About LANParty
-          </button>
-
-          <button
-            className="block rounded-lg px-2 py-2 text-sm font-medium text-white transition hover:bg-color-accent hover:opacity-100 focus:outline-none focus:ring"
-            type="button"
+            {" "}
+            About
+          </a>
+          <a
+            href="#Ambasadori"
+            className=" no-underline duration-300 hover:text-color-accent px-5 py-2 ml-2 rounded-2xl shaodw-lg hover:shadow-2xl"
           >
+            {" "}
             Ambasadori
-          </button>
-
-          <button
-            className="block rounded-lg px-2 py-2 text-sm font-medium text-white transition hover:bg-color-accent hover:opacity-100 focus:outline-none focus:ring"
-            type="button"
-            onClick={() => {
-              window.location.href = "#PartenerMedia";
-            }}
+          </a>
+          <a
+            href="#Parteneri"
+            className=" no-underline duration-300 hover:text-color-accent px-5 py-2 ml-2 rounded-2xl shaodw-lg hover:shadow-2xl"
           >
+            {" "}
             Parteneri
-          </button>
-          
-          <button
-            className="block rounded-lg px-2 py-2 text-sm font-medium text-white transition hover:bg-color-accent hover:opacity-100 focus:outline-none focus:ring"
-            type="button"
-            onClick={() => {
-              window.location.href = "#Galerie";
-            }}
+          </a>
+          <a
+            href="#Galerie"
+            className=" no-underline duration-300 hover:text-color-accent px-5 py-2 ml-2 rounded-2xl shaodw-lg hover:shadow-2xl"
           >
+            {" "}
             Galerie
-          </button>
-
+          </a>
+        </div>
+        <div
+          onClick={handleNav}
+          className="block md:hidden cursor-pointer z-10"
+        >
+          {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+        </div>
+        <div
+          className={
+            nav
+              ? "md:hidden fixed right-10 top-20 flex flex-col items-center justify-between w-[80%] h-fit border-2 border-color-accent bg-black ease-in duration-500 z-10  rounded-lg"
+              : "fixed right-[-100%] w-[80%] top-20 h-fit flex flex-col items-center justify-between ease-in duration-500"
+          }
+        >
+          <ul className="w-full p-4 ">
+            <li className=" py-6 border-b">
+              <a href="#Inscrieri">Înscrieri</a>
+            </li>
+            <li className=" py-6 border-b">
+              <a href="#AboutLAN">About</a>
+            </li>
+            <li className=" py-6 border-b">
+              <a href="#Ambasadori">Ambasadori</a>
+            </li>
+            <li className=" py-6 border-b">
+              <a href="#Parteneri">Parteneri</a>
+            </li>
+            <li className=" py-6 border-b">
+              <a href="#Galerie">Galerie</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </header>
+    </>
   );
 }
