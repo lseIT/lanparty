@@ -20,7 +20,7 @@ export default function JocuriSecundare()
                 <a target="_blank" href="https://support.riotgames.com/hc/en-us">
                     <div className="w-full h-full"><img src={bg_tft} alt="Imagine TFT-TeamFight Tactics"/></div>
                     <div className="hover">
-                        <img src={logo_tft}></img>
+                        <img src={logo_tft} alt="Imagine logo TFT-TeamFight Tactics"></img>
                         <label>
                             Click aici
                         </label>
@@ -34,7 +34,7 @@ export default function JocuriSecundare()
                 <a target="_blank" href="https://www.counter-strike.net/news">
                     <div className="w-full h-full"><img src={ea} alt="Imagine Ea Sports FC"/></div>
                     <div className="hover">
-                        <img src={ea}/>
+                        <img src={ea} alt="Imagine Logo Ea Sports FC"/>
                         <label>
                             Click aici
                         </label>
@@ -48,7 +48,7 @@ export default function JocuriSecundare()
                 <a target="_blank" href="https://www.counter-strike.net/news">
                     <div className="w-full h-full"><img src={hearth} alt="Imagine Hearthstone"/></div>
                     <div className="hover">
-                        <img src={hearth}/>
+                        <img src={hearth} alt="Imagine Logo Hearthstone"/>
                         <label>
                             Click aici
                         </label>
@@ -60,9 +60,9 @@ export default function JocuriSecundare()
             </li>
             <li className="mortal_kombat">
                 <a target="_blank" href="https://www.counter-strike.net/news">
-                    <div className="w-full h-full"><img src={mortal}/></div>
+                    <div className="w-full h-full"><img src={mortal} alt="Imagine Mortal Kombat"/></div>
                     <div className="hover">
-                        <img src={mortal} alt="Imagine Mortal Kombat"/>
+                        <img src={mortal} alt="Imagine Logo Mortal Kombat"/>
                         <label>
                             Click aici
                         </label>
@@ -76,7 +76,7 @@ export default function JocuriSecundare()
                 <a target="_blank" href="https://www.counter-strike.net/news">
                     <div className="w-full h-full"><img src={clash} alt="Imagine Clash Royale"/></div>
                     <div className="hover">
-                        <img src={clash}/>
+                        <img src={clash} alt="Imagine Logo Clash Royale"/>
                         <label>
                             Click aici
                         </label>
