@@ -133,11 +133,11 @@ function PartenerMedia() {
         </div>
 
         <div className="flex justify-center">
-          <h3 className="flex justify-center pb-16 text-white text-xl">
+          <h3 className="text-center md:pb-16 text-white text-xl">
             Pentru ediția curentă de LANParty, avem onoarea să colaborăm cu una
             dintre organizațiile eSports de prestigiu din România:
             <a
-              className="text-[#78e800] underline whitespace-nowrap"
+              className="text-[#78e800] underline whitespace-nowrap pl-2 pr-1"
               href="https://allstars-gaming.ro/"
               target="_blank"
               rel="noopener noreferrer"
@@ -147,7 +147,7 @@ function PartenerMedia() {
             ca partener media oficial.
           </h3>
         </div>
-        <div className="pb-16 flex justify-center">
+        <div className="pb-16 flex justify-center pt-8">
           <button className="bg-[#78e800] text-black font-bold py-2 px-20 rounded">
             REACH ESTIMATIV
           </button>
