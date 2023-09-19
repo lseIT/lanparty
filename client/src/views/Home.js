@@ -30,9 +30,7 @@ export default function Home() {
 
           <div id="Inscrieri" className=" pt-0">
           <ButoanePrincipale/>
-
           <ActivitatiSecundare/>
-          
           <Cosplay />
           </div>
 
