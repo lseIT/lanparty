@@ -34,7 +34,7 @@ export default function Galery() {
 
   return (
     <>
-      <div className="max-w-[1000px] h-[700px] w-full m-auto py-16 px-6 -top-52 relative group">
+      <div className="max-w-[1000px] h-[700px] w-full m-auto py-16 -top-28 md:-top-16 px-6 relative group">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className="w-full h-full rounded-2xl bg-center bg-cover duration-500"

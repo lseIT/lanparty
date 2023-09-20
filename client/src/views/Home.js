@@ -49,7 +49,7 @@ export default function Home() {
 
           {/* Testimoniale */}
 
-          <div id="Galerie" className=" pt-32 h-3/5">
+          <div id="Galerie" className=" h-3/5">
             <Galery />
           </div>
 
