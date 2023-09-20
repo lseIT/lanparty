@@ -152,7 +152,7 @@ function PartenerMedia() {
             REACH ESTIMATIV
           </button>
         </div>
-        <div className="flex justify-center flex-wrap pt-9">
+        <div className="flex justify-center flex-wrap">
           <span className="m-3">{TikTokButton("171k", "TikTok")}</span>
           <span className="m-3">{InstagramButton("117k", "Instagram")}</span>
           <span className="m-3">{YouTubeButton("1.07M", "YouTube")}</span>
