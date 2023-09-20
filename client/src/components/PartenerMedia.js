@@ -116,7 +116,7 @@ function PartenerMedia() {
       >
         <div className="flex justify-center pb-16">
           <h1 className="flex justify-center text-3xl font-bold text-white">
-            ALLSTARS GAMING: Partener Media
+          <text>ALLSTARS GAMING:</text><text className="text-[#78e800]">Partener Media</text>
           </h1>
         </div>
         <div className="flex justify-center pb-16 transform transition-transform duration-600 hover:scale-110">
