@@ -1,17 +1,43 @@
+import Poza1 from "../assets/img/webp/gallery/poze-lan-1.webp";
+import Poza3 from "../assets/img/webp/gallery/poze-lan-3.webp";
+import Poza4 from "../assets/img/webp/gallery/poze-lan-4.webp";
+import Poza5 from "../assets/img/webp/gallery/poze-lan-5.webp";
+import Poza6 from "../assets/img/webp/gallery/poze-lan-6.webp";
+import Poza7 from "../assets/img/webp/gallery/poze-lan-7.webp";
+import Poza8 from "../assets/img/webp/gallery/poze-lan-8.webp";
+import Poza9 from "../assets/img/webp/gallery/poze-lan-9.webp";
+import Poza13 from "../assets/img/webp/gallery/poze-lan-13.webp";
+import Poza14 from "../assets/img/webp/gallery/poze-lan-14.webp";
+
 export const slides = [
   {
-    url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
+    url: Poza3,
   },
   {
-    url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+    url: Poza4,
   },
   {
-    url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
+    url: Poza5,
   },
   {
-    url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
+    url: Poza6,
   },
   {
-    url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
+    url: Poza7,
+  },
+  {
+    url: Poza1,
+  },
+  {
+    url: Poza8,
+  },
+  {
+    url: Poza9,
+  },
+  {
+    url: Poza13,
+  },
+  {
+    url: Poza14,
   },
 ];
