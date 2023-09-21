@@ -38,7 +38,7 @@ export default function Home() {
             <AboutLanparty />
           </div>
 
-          {/* <Ambasadori /> */}
+          <Ambasadori />
 
           <div id="PartenerMedia" className=" pt-32">
             <PartenerMedia />
