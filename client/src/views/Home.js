@@ -11,6 +11,7 @@ import Galery from "../components/Galery";
 import ButoanePrincipale from "../components/ActivitatiPrincipale";
 import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
+import Ambasadori from "../components/Ambasadori";
 export default function Home() {
   return (
     <>
@@ -37,7 +38,7 @@ export default function Home() {
             <AboutLanparty />
           </div>
 
-          {/* Ambasadori */}
+          {/* <Ambasadori /> */}
 
           <div id="PartenerMedia" className=" pt-32">
             <PartenerMedia />
