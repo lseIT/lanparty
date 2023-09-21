@@ -10,7 +10,7 @@ import poza6 from "../assets/img/webp/gallery/poze-lan-6.webp";
 
 const MyCarousel = () => {
   return (
-    <div className=" ">
+    <>
       {/* For Mobile Phone */}
       <div className="md:hidden flex justify-center ">
         <h1 className="uppercase mt-10 text-2xl md:text-3xl font-bold whitespace-nowrap p-4 mb-6 text-white">
@@ -96,11 +96,9 @@ const MyCarousel = () => {
               <img src={poza6} alt="Image 6" />
             </div>
           </div>
-
-          {/* ... Slide 2, Slide 3, Slide 4 ... */}
         </Carousel>
       </div>
-    </div>
+    </>
   );
 };
 
