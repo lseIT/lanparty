@@ -2,22 +2,9 @@ import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import ColajCosplay from "../assets/img/ColajCosplay.webp";
 
-function SignupButton() {
-  const googleFormLink = "https://docs.google.com/forms/d/e/..."; // Înlocuiți cu linkul dvs.
-
-  return (
-    <a
-      href={googleFormLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-[#78e800] text-black flex justify-center items-center w-full text-xl py-6 rounded-lg hover:bg-green-600 active:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 hover:duration-300 font-bold whitespace-nowrap"
-    >
-      Înscrie-te
-    </a>
-  );
-}
-
 function Cosplay() {
+  const googleFormLink = "https://docs.google.com/forms/d/e/...";
+  const [isHovered, setIsHovered] = React.useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -43,30 +30,45 @@ function Cosplay() {
           animate={mainControls}
           transition={{ duration: 0.5, delay: 0.25 }}
         >
-          <div className="flex-wrap rounded-lg">
-            <div className="relative w-128 rounded-lg mx-auto mt-16">
-              <img
-                className="w-full rounded-lg hover:blur-[2px] transition duration-300"
-                src={ColajCosplay}
-                alt="Imagine cu un colaj cosplay"
-              />
-              <div className="pointer-events-none absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-                <span
-                  style={{
-                    textShadow:
-                      "-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black",
-                  }}
-                  className="text-5xl pb-16 text-stroke-3 font-bold text-[#78e800] mb-4"
+          <div
+            
+            className="text-5xl flex justify-center text-stroke-3 font-bold text-white mb-4"
+          >
+            <text>COS</text><text className="text-[#78e800]">PLAY</text>
+          </div>
+          <div className="flex-wrap rounded-lg pb-16">
+            <div
+              className="relative md:w-4/6 w-4/5 rounded-lg mx-auto mt-16"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <a
+                href={googleFormLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="w-full rounded-lg hover:blur-[2px] transition duration-300"
+                  src={ColajCosplay}
+                  alt="Imagine cu un colaj cosplay"
+                />
+                <div className="pointer-events-none absolute top-0 opacity-80 left-0 w-full h-full flex flex-col items-center justify-center">
+                  <span className="md:text-3xl text-xs text-white hover:duration-300 hover:bg-opacity-0 bg-black px-2 py-1 rounded">
+                    Competiția cosplay la LanParty LSE: tehnologia întâlnește
+                    arta și pasiunea.
+                  </span>
+                </div>
+                <div
+                  className={`pointer-events-none absolute bottom-1/4 left-1/2 bg-opacity-75 transform -translate-x-1/2 bg-[#78e800] md:px-2 md:py-1 rounded transition-opacity duration-300 ${
+                    isHovered ? "opacity-85" : "opacity-0"
+                  }`}
                 >
-                  COSPLAY
-                </span>
-                <span className="md:text-3xl text-xs text-white hover:duration-300 hover:bg-opacity-0 bg-black px-2 py-1 rounded">
-                  Competiția cosplay la LanParty LSE: tehnologia întâlnește arta
-                  și pasiunea.
-                </span>
-              </div>
+                  <span className="text-xs sm:text-sm md:text-xl lg:text-2xl xl:text-3xl text-white whitespace-nowrap">
+                    CLICK AICI PENTRU ÎNSCRIERE
+                  </span>
+                </div>
+              </a>
             </div>
-            <div className="text-center pt-16 pb-32">{SignupButton()}</div>
           </div>
         </motion.div>
       </div>
