@@ -115,8 +115,13 @@ function PartenerMedia() {
         transition={{ duration: 0.5, delay: 0.25 }}
       >
         <div className="flex justify-center pb-16">
-          <h1 className="flex justify-center text-3xl font-bold text-white">
-          <text className="px-2  ">ALLSTARS GAMING</text><text className="  text-[#78e800]">Partener Media</text>
+          <h1 className="flex justify-center text-3xl font-bold text-white md:flex-row flex-col">
+            <span className="allstars-title px-2 mb-2 md:mb-0">
+              ALLSTARS GAMING
+            </span>
+            <span className="partener-title flex justify-center text-[#78e800]">
+              Partener Media
+            </span>
           </h1>
         </div>
         <div className="flex justify-center pb-16 transform transition-transform duration-600 hover:scale-110">
