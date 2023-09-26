@@ -57,7 +57,7 @@
       padding-bottom: 15%;
       justify-content: center;
       flex-wrap: wrap;
-      column-gap: 15rem;
+      column-gap: 6rem;
       
     }
     
@@ -167,4 +167,19 @@
     *{
       scroll-behavior: smooth;
 
+    }
+    #cards .tft a:hover::after {
+      background: rgba(53, 53, 81, 0.82);
+    }
+    #cards .ea a:hover::after {
+      background: rgba(142, 142, 186, 0.82);
+    }
+    #cards .hearth a:hover::after {
+      background: rgba(50, 105, 168, 0.82);
+    }
+    #cards .mk a:hover::after {
+      background: rgba(65, 30, 69, 0.82);
+    }
+    #cards .clash_royale a:hover::after {
+      background: rgba(66, 132, 231, 0.82);
     }

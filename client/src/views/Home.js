@@ -9,6 +9,7 @@ import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
 import Galery from "../components/Galery";
 import ButoanePrincipale from "../components/ActivitatiPrincipale";
+import ActivitatiSecundare from "../components/ActivitatiSecundare";
 import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
 import Ambasadori from "../components/Ambasadori";
@@ -29,9 +30,9 @@ export default function Home() {
           {/* Banner */}
 
           <div id="Inscrieri" className=" pt-0">
-            <ButoanePrincipale />
-            {/* Act. secundare */}
-            <Cosplay />
+          <ButoanePrincipale/>
+          <ActivitatiSecundare/>
+          <Cosplay />
           </div>
 
           <div id="AboutLAN" className=" pt-0">
