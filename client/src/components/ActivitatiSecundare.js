@@ -10,7 +10,7 @@ import mortal_logo from "../assets/img/webp/activitatisecundare/mortal_logo5.web
 import tft from "../assets/img/webp/activitatisecundare/tft_final3.webp";
 import tft_logo from "../assets/img/webp/activitatisecundare/tft_logo_fin.webp";
 
-export default function JocuriSecundare()
+export default function ActivitatiSecundare()
 {
     return (
         <ul id="cards">
@@ -20,12 +20,15 @@ export default function JocuriSecundare()
                     <div className="w-full h-full"><img src={tft} alt="Imagine TFT-TeamFight Tactics"/></div>
                     <div className="hover">
                         <img src={tft_logo} alt="Imagine logo TFT-TeamFight Tactics"></img>
-                        <label>
+                        {/* <label>
                             Click aici
                         </label>
                         <label>
                             Pentru inscriere
-                        </label>
+                        </label> */}
+                        <p className="text-white text-center p-2">
+                        Teamfight Tactics, jocul strategic și captivant de la Riot Games, îți oferă o experiență unică în care ești la comanda unor campioni din League of Legends. Luptă pentru supremație tactică!
+                        </p>
                     </div>
                 </a>
             </li>
@@ -35,12 +38,15 @@ export default function JocuriSecundare()
                     <div className="w-full h-full"><img src={ea} alt="Imagine Ea Sports FC"/></div>
                     <div className="hover">
                         <img src={ea_logo} alt="Imagine Logo Ea Sports FC"/>
-                        <label>
+                        {/* <label>
                             Click aici
                         </label>
                         <label>
                             Pentru inscriere
-                        </label>
+                        </label> */}
+                        <p className="text-white text-center p-2">
+                        Experimentează competiția fotbalistică virtuală într-un joc impresionant, unde poți juca, crea și domina în lumea fascinantă a fotbalului electronic. Este timpul să îți arăți abilitățile!
+                        </p>
                     </div>
                 </a>
             </li>
@@ -50,12 +56,15 @@ export default function JocuriSecundare()
                     <div className="w-full h-full"><img src={hearth} alt="Imagine Hearthstone"/></div>
                     <div className="hover">
                         <img src={hearth_logo} alt="Imagine Logo Hearthstone"/>
-                        <label>
+                        {/* <label>
                             Click aici
                         </label>
                         <label>
                             Pentru inscriere
-                        </label>
+                        </label> */}
+                        <p className="text-white text-center p-2">
+                        Descoperă un univers captivant al duelurilor magice și al strategiilor în acest joc de cărți de la Blizzard. Construiește-ți un deck unic, adună eroi și hai să te vedem luptând în lumea fermecată a Azerothului.
+                         </p>
                     </div>
                 </a>
             </li>
@@ -65,12 +74,15 @@ export default function JocuriSecundare()
                     <div className="w-full h-full"><img src={mortal} alt="Imagine Mortal Kombat"/></div>
                     <div className="hover">
                         <img src={mortal_logo} alt="Imagine Logo Mortal Kombat"/>
-                        <label>
+                        {/* <label>
                             Click aici
                         </label>
                         <label>
                             Pentru inscriere
-                        </label>
+                        </label> */}
+                        <p className="text-white text-center p-2">
+                        Mortal Kombat te invită într-un univers fascinant, unde bătăliile sunt pline de mișcări spectaculoase și strategii ingenioase. Înfruntă-ți adversarii și triumfă în arena provocatoare!
+                        </p>
                     </div>
                 </a>
             </li>
@@ -80,12 +92,15 @@ export default function JocuriSecundare()
                     <div className="w-full h-full"><img src={clash} alt="Imagine Clash Royale"/></div>
                     <div className="hover">
                         <img src={clash_logo} alt="Imagine Logo Clash Royale"/>
-                        <label>
+                        {/* <label>
                             Click aici
                         </label>
                         <label>
                             Pentru inscriere
-                        </label>
+                        </label> */}
+                        <p className="text-white text-center p-2">
+                        Descoperă universul fascinant Clash Royale, un joc strategic ce te provoacă să-ți construiești armata și să-ți demonstrezi abilitățile în dueluri memorabile. Alătură-te acum și devino stăpânul tacticii într-o lume plină de aventură!
+                        </p>
                     </div>
                 </a>
             </li>
