@@ -12,6 +12,7 @@ import ButoanePrincipale from "../components/ActivitatiPrincipale";
 import ActivitatiSecundare from "../components/ActivitatiSecundare";
 import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
+import Ambasadori from "../components/Ambasadori";
 export default function Home() {
   return (
     <>
@@ -19,7 +20,7 @@ export default function Home() {
         <div className="col-span-1 bg-gray-200 h-full">
           <div className="grid grid-cols-3 w-full">
             <div className=" col-span-1 bg-black h-screen"></div>
-            <img src={Bara} className=" col-span-1 bg-black h-screen"/>
+            <img src={Bara} className=" col-span-1 bg-black h-screen" />
             <div className=" col-span-1 bg-black h-screen"></div>
           </div>
         </div>
@@ -35,31 +36,31 @@ export default function Home() {
           </div>
 
           <div id="AboutLAN" className=" pt-0">
-          <AboutLanparty />
+            <AboutLanparty />
           </div>
 
-          {/* Ambasadori */}
+          <Ambasadori />
 
           <div id="PartenerMedia" className=" pt-32">
-          <PartenerMedia />
+            <PartenerMedia />
           </div>
 
           {/* Sponsori */}
 
           <AboutUs />
-          
+
           {/* Testimoniale */}
 
-          <div id="Galerie" className=" pt-32">
-          <Galery /> 
+          <div id="Galerie" className=" h-3/5">
+            <Galery />
           </div>
-          
+
           <Footer />
         </div>
         <div className="col-span-1 bg-gray-200 h-full">
           <div className="grid grid-cols-3 w-full">
             <div className=" col-span-1 bg-black h-screen"></div>
-            <img src={Bara} className=" col-span-1 bg-black h-screen"/>
+            <img src={Bara} className=" col-span-1 bg-black h-screen" />
             <div className=" col-span-1 bg-black h-screen"></div>
           </div>
         </div>
