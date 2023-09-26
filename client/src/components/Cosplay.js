@@ -3,7 +3,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import ColajCosplay from "../assets/img/ColajCosplay.webp";
 
 function Cosplay() {
-  const googleFormLink = "https://docs.google.com/forms/d/e/...";
+  const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSdLoKugg4QfKFswpmC5U7SqViCXDBDE5tfmpzFNRiJiUcbQsw/viewform?usp=sharing";
   const [isHovered, setIsHovered] = React.useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
