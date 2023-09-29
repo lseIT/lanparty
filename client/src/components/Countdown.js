@@ -46,45 +46,45 @@ const Countdown = ({numarMinute}) => {
       setState({ days: days, hours: hours, minutes, seconds });
     }
   };
-
+  
   return (
-    <div className="w-full flex justify-center text-white mt-[10vh]">
-      <div className="flex">
+    <div className="w-full flex justify-center text-[#78e800] md:scale-x-100 scale-x-50">
+      
         <div className="time-section">
-          <div className="time text-6xl font-extrabold">
+          <div className="time text-8xl font-extrabold">
             {state.days || "0"}
           </div>
-          <small className="time-text">Days</small>
+          <small className="time-text text-white">Zile</small>
         </div>
         <div className="time-section">
-          <div className="time text-6xl font-extrabold">:</div>
+          <div className="time text-8xl font-extrabold text-white">:</div>
         </div>
         <div className="time-section">
-          <div className="time text-6xl font-extrabold">
+          <div className="time text-8xl font-extrabold">
             {state.hours || "00"}
           </div>
-          <small className="time-text">Hours</small>
+          <small className="time-text text-white">Ore</small>
         </div>
         <div className="time-section">
-          <div className="time text-6xl font-extrabold">:</div>
+          <div className="time text-8xl font-extrabold text-white">:</div>
         </div>
         <div className="time-section">
-          <div className="time text-6xl font-extrabold">
+          <div className="time text-8xl font-extrabold">
             {state.minutes || "00"}
           </div>
-          <small className="time-text">Minutes</small>
+          <small className="time-text text-white">Minute</small>
         </div>
         <div className="time-section">
-          <div className="time text-6xl font-extrabold">:</div>
+          <div className="time text-8xl font-extrabold text-white">:</div>
         </div>
         <div className="time-section">
-          <div className="time text-6xl font-extrabold">
+          <div className="time text-8xl font-extrabold">
             {state.seconds || "00"}
           </div>
-          <small className="time-text">Seconds</small>
+          <small className="time-text text-white">Secunde</small>
         </div>
       </div>
-    </div>
+    
   );
 };
 
