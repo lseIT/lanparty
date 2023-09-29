@@ -52,9 +52,6 @@ export default function Home() {
 
           {/* Testimoniale */}
 
-          {/* <div id="Galerie" className=" h-3/5">
-            <Galery />
-          </div> */}
           <div id="Galerie" className=" lg:m-24">
             <Album />
           </div>

@@ -6,11 +6,14 @@ export default function Album() {
   return (
     <>
       <Carousel showArrows={true}>
-        {slides.map((slide, slideIndex) => (
-          <div>
-            <img src={slide.url} alt="poza" className=" rounded-xl" />
-          </div>
-        ))}
+        {slides.map((slide, slideIndex) => {
+          const altText = "Poza " + slideIndex;
+          return (
+            <div>
+              <img src={slide.url} alt={altText} className=" rounded-xl" />
+            </div>
+          );
+        })}
       </Carousel>
     </>
   );
