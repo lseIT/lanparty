@@ -115,8 +115,13 @@ function PartenerMedia() {
         transition={{ duration: 0.5, delay: 0.25 }}
       >
         <div className="flex justify-center pb-16">
-          <h1 className="flex justify-center text-3xl font-bold text-white">
-            ALLSTARS GAMING: Partener Media
+          <h1 className="flex justify-center text-3xl font-bold text-white md:flex-row flex-col">
+            <span className="allstars-title px-2 mb-2 md:mb-0">
+              ALLSTARS GAMING
+            </span>
+            <span className="partener-title flex justify-center text-[#78e800]">
+              Partener Media
+            </span>
           </h1>
         </div>
         <div className="flex justify-center pb-16 transform transition-transform duration-600 hover:scale-110">
@@ -152,7 +157,7 @@ function PartenerMedia() {
             REACH ESTIMATIV
           </button>
         </div>
-        <div className="flex justify-center flex-wrap pt-9">
+        <div className="flex justify-center flex-wrap">
           <span className="m-3">{TikTokButton("171k", "TikTok")}</span>
           <span className="m-3">{InstagramButton("117k", "Instagram")}</span>
           <span className="m-3">{YouTubeButton("1.07M", "YouTube")}</span>

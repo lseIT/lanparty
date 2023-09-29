@@ -9,9 +9,11 @@ import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
 import Galery from "../components/Galery";
 import ButoanePrincipale from "../components/ActivitatiPrincipale";
+import ActivitatiSecundare from "../components/ActivitatiSecundare";
 import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
 import Countdown from "../components/Countdown";
+import Ambasadori from "../components/Ambasadori";
 export default function Home() {
   return (
     <>
@@ -19,7 +21,7 @@ export default function Home() {
         <div className="col-span-1 bg-gray-200 h-full">
           <div className="grid grid-cols-3 w-full">
             <div className=" col-span-1 bg-black h-screen"></div>
-            <img src={Bara} className=" col-span-1 bg-black h-screen"/>
+            <img src={Bara} className=" col-span-1 bg-black h-screen" />
             <div className=" col-span-1 bg-black h-screen"></div>
           </div>
         </div>
@@ -31,36 +33,36 @@ export default function Home() {
           {/* De la ora 00 : 00 se incepe calculul */}
           <Countdown numarMinute = {0} /> 
           <ButoanePrincipale/>
-          {/* Act. secundare */}
+          <ActivitatiSecundare/>
           <Cosplay />
           </div>
 
           <div id="AboutLAN" className=" pt-0">
-          <AboutLanparty />
+            <AboutLanparty />
           </div>
 
-          {/* Ambasadori */}
+          <Ambasadori />
 
           <div id="PartenerMedia" className=" pt-32">
-          <PartenerMedia />
+            <PartenerMedia />
           </div>
 
           {/* Sponsori */}
 
           <AboutUs />
-          
+
           {/* Testimoniale */}
 
-          <div id="Galerie" className=" pt-32">
-          <Galery /> 
+          <div id="Galerie" className=" h-3/5">
+            <Galery />
           </div>
-          
+
           <Footer />
         </div>
         <div className="col-span-1 bg-gray-200 h-full">
           <div className="grid grid-cols-3 w-full">
             <div className=" col-span-1 bg-black h-screen"></div>
-            <img src={Bara} className=" col-span-1 bg-black h-screen"/>
+            <img src={Bara} className=" col-span-1 bg-black h-screen" />
             <div className=" col-span-1 bg-black h-screen"></div>
           </div>
         </div>
