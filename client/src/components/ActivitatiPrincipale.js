@@ -10,7 +10,7 @@ export default function ButoanePrincipale(){
     
     <ul id="cards">
         <li className="lol">
-            <a target="_blank" href="https://support.riotgames.com/hc/en-us">
+            <a target="_blank" href="https://forms.gle/zvgg1Yw8ScXwKX9UA">
                 <div className="w-full h-full"><img src={lol}/></div>
                 
                 <div className="hover">
@@ -27,7 +27,7 @@ export default function ButoanePrincipale(){
         </li>
 
         <li className="cs" >
-            <a target="_blank" href="https://www.counter-strike.net/news">
+            <a target="_blank" href="https://forms.gle/vmT3SvdVtWKkQsUPA">
                 <div className="w-full h-full"><img src={cs2}/></div>
                 
                 <div className="hover">

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const Countdown = ({numarMinute}) => {
   const [countdownDate, setCountdownDate] = useState(
-   (new Date("09/20/2023").getTime() + (numarMinute * 60 * 1000))
+   (new Date("11/18/2023").getTime() + (numarMinute * 60 * 1000))
   );
 
   const [state, setState] = useState({
@@ -48,7 +48,7 @@ const Countdown = ({numarMinute}) => {
   };
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center text-white mt-[10vh]">
       <div className="flex">
         <div className="time-section">
           <div className="time text-6xl font-extrabold">
