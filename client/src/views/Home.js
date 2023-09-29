@@ -13,6 +13,7 @@ import ActivitatiSecundare from "../components/ActivitatiSecundare";
 import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
 import Ambasadori from "../components/Ambasadori";
+import Album from "../components/Album";
 export default function Home() {
   return (
     <>
@@ -30,9 +31,9 @@ export default function Home() {
           {/* Banner */}
 
           <div id="Inscrieri" className=" pt-0">
-          <ButoanePrincipale/>
-          <ActivitatiSecundare/>
-          <Cosplay />
+            <ButoanePrincipale />
+            <ActivitatiSecundare />
+            <Cosplay />
           </div>
 
           <div id="AboutLAN" className=" pt-0">
@@ -51,10 +52,9 @@ export default function Home() {
 
           {/* Testimoniale */}
 
-          <div id="Galerie" className=" h-3/5">
-            <Galery />
+          <div id="Galerie" className=" lg:m-24">
+            <Album />
           </div>
-
           <Footer />
         </div>
         <div className="col-span-1 bg-gray-200 h-full">
