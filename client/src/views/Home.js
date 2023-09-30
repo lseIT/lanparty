@@ -52,7 +52,7 @@ export default function Home() {
 
           {/* Testimoniale */}
 
-          <div id="Galerie" className=" lg:m-24">
+          <div id="Galerie" className=" lg:m-24 lg:px-24 lg:py-30">
             <Album />
           </div>
           <Footer />

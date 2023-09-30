@@ -5,7 +5,14 @@ import { slides } from "../config/configAlbum";
 export default function Album() {
   return (
     <>
-      <Carousel showArrows={true}>
+      <Carousel
+        showArrows={false}
+        infiniteLoop={true}
+        showStatus={false}
+        interval={4000}
+        emulateTouch={true}
+        autoPlay={true}
+      >
         {slides.map((slide, slideIndex) => {
           const altText = "Poza " + slideIndex;
           return (
