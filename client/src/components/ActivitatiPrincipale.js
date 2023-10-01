@@ -9,7 +9,7 @@ export default function ButoanePrincipale(){
     return (
     
     <ul id="cards">
-    <div className="mb-20 lg:mb-32  w-full flex justify-center  font-extrabold leading-none tracking-tight text-[#78e800] md:scale-x-100 text-2-5xl lg:text-7xl md:text-5xl sm:text-3xl">Competitii principale</div>
+    <div className="mb-20 lg:mb-32  w-full flex justify-center  font-extrabold leading-none tracking-tight text-[#78e800] text-1234xl lg:text-7xl md:text-5xl sm:text-3xl">Competitii principale</div>
         <li className="lol">
             <a target="_blank" href="https://forms.gle/zvgg1Yw8ScXwKX9UA">
                 <div className="w-full h-full"><img src={lol}/></div>
