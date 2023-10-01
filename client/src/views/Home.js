@@ -12,6 +12,7 @@ import ButoanePrincipale from "../components/ActivitatiPrincipale";
 import ActivitatiSecundare from "../components/ActivitatiSecundare";
 import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
+import Countdown from "../components/Countdown";
 import Ambasadori from "../components/Ambasadori";
 import Album from "../components/Album";
 export default function Home() {
@@ -29,11 +30,12 @@ export default function Home() {
           <Header />
 
           {/* Banner */}
-
           <div id="Inscrieri" className=" pt-0">
-            <ButoanePrincipale />
-            <ActivitatiSecundare />
-            <Cosplay />
+          {/* De la ora 00 : 00 se incepe calculul */}
+          <ButoanePrincipale/>
+          <Countdown numarMinute = {0} /> 
+          <ActivitatiSecundare/>
+          <Cosplay />
           </div>
 
           <div id="AboutLAN" className=" pt-0">

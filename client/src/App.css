@@ -53,8 +53,8 @@
       display: flex;
       list-style: none;
       margin-top: 50px;
-      padding-top: 15%;
-      padding-bottom: 15%;
+      padding-top: 5%;
+      padding-bottom: 5%;
       justify-content: center;
       flex-wrap: wrap;
       column-gap: 6rem;
@@ -183,3 +183,8 @@
     #cards .clash_royale a:hover::after {
       background: rgba(66, 132, 231, 0.82);
     }
+
+    .text-2-5xl {
+      font-size: 1.7rem;
+      line-height: 2rem;
+  }
