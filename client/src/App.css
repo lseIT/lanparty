@@ -183,8 +183,3 @@
     #cards .clash_royale a:hover::after {
       background: rgba(66, 132, 231, 0.82);
     }
-
-    .text-2-5xl {
-      font-size: 1.7rem;
-      line-height: 2rem;
-  }
