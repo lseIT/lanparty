@@ -14,6 +14,7 @@ import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
 import Countdown from "../components/Countdown";
 import Ambasadori from "../components/Ambasadori";
+import Album from "../components/Album";
 export default function Home() {
   return (
     <>
@@ -53,10 +54,9 @@ export default function Home() {
 
           {/* Testimoniale */}
 
-          <div id="Galerie" className=" h-3/5">
-            <Galery />
+          <div id="Galerie" className=" lg:m-24 lg:px-24 lg:py-30">
+            <Album />
           </div>
-
           <Footer />
         </div>
         <div className="col-span-1 bg-gray-200 h-full">
