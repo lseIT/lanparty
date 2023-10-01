@@ -14,9 +14,13 @@ import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
 import Ambasadori from "../components/Ambasadori";
 import Album from "../components/Album";
+import { Helmet } from 'react-helmet';
 export default function Home() {
   return (
     <>
+    <Helmet>
+        <title class="text-3xl">LanParty powered by LSE</title>
+    </Helmet>
       <div className="grid grid-cols-12">
         <div className="col-span-1 bg-gray-200 h-full">
           <div className="grid grid-cols-3 w-full">

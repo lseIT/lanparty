@@ -3,7 +3,8 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import ColajCosplay from "../assets/img/ColajCosplay.webp";
 
 function Cosplay() {
-  const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSdLoKugg4QfKFswpmC5U7SqViCXDBDE5tfmpzFNRiJiUcbQsw/viewform?usp=sharing";
+  const googleFormLink =
+    "https://docs.google.com/forms/d/e/1FAIpQLSdLoKugg4QfKFswpmC5U7SqViCXDBDE5tfmpzFNRiJiUcbQsw/viewform?usp=sharing";
   const [isHovered, setIsHovered] = React.useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -30,11 +31,9 @@ function Cosplay() {
           animate={mainControls}
           transition={{ duration: 0.5, delay: 0.25 }}
         >
-          <div
-            
-            className="text-5xl flex justify-center text-stroke-3 font-bold text-white mb-4"
-          >
-            <text>COS</text><text className="text-[#78e800]">PLAY</text>
+          <div className="text-5xl flex justify-center text-stroke-3 font-bold text-white mb-4">
+            <text>COS</text>
+            <text className="text-[#78e800]">PLAY</text>
           </div>
           <div className="flex-wrap rounded-lg pb-16">
             <div
