@@ -25,35 +25,30 @@ const MyCarousel = () => {
               <img src={poza1} alt="Image 1" />
             </div>
           </div>
-
           {/* Slide 2 */}
           <div className=" flex gap-10 mt-5 justify-center items-center">
             <div className="w-full">
               <img src={poza2} alt="Image 1" />
             </div>
           </div>
-
           {/* Slide 3 */}
           <div className="flex gap-10 mt-5 justify-center items-center">
             <div className="w-full">
               <img src={poza3} alt="Image 1" />
             </div>
           </div>
-
           {/* Slide 4 */}
           <div className="flex gap-10 mt-5 justify-center items-center">
             <div className="w-full">
               <img src={poza4} alt="Image 1" />
             </div>
           </div>
-
           {/* Slide 5 */}
           <div className=" flex gap-10 mt-5 justify-center items-center">
             <div className="w-full">
               <img src={poza5} alt="Image 1" />
             </div>
           </div>
-
           {/* Slide 6 */}
           <div className=" flex gap-10 mt-5 justify-center items-center">
             <div className="w-full">
@@ -62,7 +57,6 @@ const MyCarousel = () => {
           </div>
         </Carousel>
       </div>
-
       {/* For Desktop */}
       <div className="hidden md:block ">
         <div className=" flex justify-center ">
@@ -83,7 +77,6 @@ const MyCarousel = () => {
               <img src={poza3} alt="Image 3" />
             </div>
           </div>
-
           {/* Slide 2 */}
           <div className="flex gap-10 mt-5 justify-center items-center">
             <div className="w-1/3">
