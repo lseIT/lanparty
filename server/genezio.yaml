@@ -1,0 +1,11 @@
+name: lanparty
+region: eu-central-1
+cloudProvider: genezio
+sdk:
+  language: js
+  path: ../client/src/sdk
+scripts:
+  preFrontendDeploy: cd ../client && npm install && npm run build
+frontend:
+  path: ../client/build
+  subdomain: apricot-evil-pigeon
