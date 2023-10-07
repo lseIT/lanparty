@@ -51,7 +51,7 @@ export default function Home() {
           {/* Sponsori */}
 
           <AboutUs />
-
+          <Numere />
           {/* Testimoniale */}
 
           <div id="Galerie" className=" lg:m-24 lg:px-24 lg:py-30">
