@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-const Countdown = ({numarMinute}) => {
+const Countdown = ({ numarMinute, text }) => {
   const [countdownDate, setCountdownDate] = useState(
-   (new Date("10/31/2023").getTime() + (numarMinute * 60 * 1000))
+    new Date("10/31/2023").getTime() + numarMinute * 60 * 1000
   );
 
   const [state, setState] = useState({
@@ -20,9 +20,8 @@ const Countdown = ({numarMinute}) => {
     if (countdownDate) {
       const currentTime = new Date().getTime();
 
-
       const distanceToDate = countdownDate - currentTime;
-                                            
+
       let days = Math.floor(distanceToDate / (1000 * 60 * 60 * 24));
       let hours = Math.floor(
         (distanceToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -46,10 +45,13 @@ const Countdown = ({numarMinute}) => {
       setState({ days: days, hours: hours, minutes, seconds });
     }
   };
-  
+
   return (
-    <div className="w-full flex justify-center text-[#78e800] md:scale-x-100 scale-x-50">
-      
+    <>
+      <h1 className=" text-color-accent text-sm md:text-xl flex justify-center">
+        {text}
+      </h1>
+      <div className="w-full flex justify-center text-[#78e800] md:scale-x-100 scale-x-50 mb-24">
         <div className="time-section">
           <div className="time text-8xl font-extrabold">
             {state.days || "0"}
@@ -84,7 +86,7 @@ const Countdown = ({numarMinute}) => {
           <small className="time-text text-white">Secunde</small>
         </div>
       </div>
-    
+    </>
   );
 };
 
