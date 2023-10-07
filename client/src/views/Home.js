@@ -38,10 +38,10 @@ export default function Home() {
           <div id="AboutLAN" className=" pt-0">
             <AboutLanparty />
           </div>
-
-          <Ambasadori />
-
-          <div id="PartenerMedia" className=" pt-32">
+          <div id="Ambasadori">
+            <Ambasadori />
+          </div>
+          <div id="Parteneri" className=" pt-32">
             <PartenerMedia />
           </div>
 

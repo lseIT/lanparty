@@ -164,8 +164,11 @@
     #cards .cs a:hover::after {
       background: rgba(229, 167, 87, 0.87);
     }
-    a{
+    *{
       scroll-behavior: smooth;
+    }
+    a{
+      
       color:#ffffff;
       text-decoration: none;
     }
