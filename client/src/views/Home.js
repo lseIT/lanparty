@@ -33,7 +33,6 @@ export default function Home() {
           <div id="Inscrieri" className=" pt-0">
             {/* De la ora 00 : 00 se incepe calculul */}
             <ButoanePrincipale />
-            <Countdown numarMinute={0} />
             <ActivitatiSecundare />
             <Cosplay />
           </div>
