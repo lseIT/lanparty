@@ -58,7 +58,7 @@ function Cosplay() {
                   </span>
                 </div>
                 <div
-                  className={`pointer-events-none absolute bottom-1/4 left-1/2 bg-opacity-75 transform -translate-x-1/2 bg-[#78e800] md:px-2 md:py-1 rounded transition-opacity duration-300 ${
+                  className={`pointer-events-none absolute bottom-2/3 left-1/2 bg-opacity-100 transform -translate-x-1/2 bg-[#78e800] md:px-2 md:py-1 rounded transition-opacity duration-300 ${
                     isHovered ? "opacity-85" : "opacity-0"
                   }`}
                 >

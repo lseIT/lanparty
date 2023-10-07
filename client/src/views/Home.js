@@ -15,6 +15,7 @@ import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
 import Countdown from "../components/Countdown";
 import Ambasadori from "../components/Ambasadori";
 import Album from "../components/Album";
+import Banner from "../components/Banner";
 export default function Home() {
   return (
     <>
@@ -28,14 +29,13 @@ export default function Home() {
         </div>
         <div className="col-span-10 bg-black h-screen overflow-auto no-scrollbar ">
           <Header />
-
-          {/* Banner */}
+          <Banner />
           <div id="Inscrieri" className=" pt-0">
-          {/* De la ora 00 : 00 se incepe calculul */}
-          <ButoanePrincipale/>
-          <Countdown numarMinute = {0} /> 
-          <ActivitatiSecundare/>
-          <Cosplay />
+            {/* De la ora 00 : 00 se incepe calculul */}
+            <ButoanePrincipale />
+            <Countdown numarMinute={0} />
+            <ActivitatiSecundare />
+            <Cosplay />
           </div>
 
           <div id="AboutLAN" className=" pt-0">
