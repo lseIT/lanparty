@@ -56,7 +56,7 @@ export default function AboutUs() {
               <div className=" lg:flex justify-center md:gap-10 grid grid-cols-1 place-items-center ">
                 <AboutUsCard name="Electron" logo={LogoWhite} />
                 <AboutUsCard name="RoboChallenge" logo={LogoWhite} />
-                <AboutUsCard name="Aleargă pentru mama" logo={LogoWhite} />
+                <AboutUsCard name="Aleargă pentru viață" logo={LogoWhite} />
               </div>
             </div>
           </div>
