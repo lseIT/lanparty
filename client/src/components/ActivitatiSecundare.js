@@ -1,6 +1,4 @@
 import React from "react";
-import clash from "../assets/img/webp/activitatisecundare/clash_fundal2.webp";
-import clash_logo from "../assets/img/webp/activitatisecundare/clash_logo4.webp";
 import ea from "../assets/img/webp/activitatisecundare/ea_fundal2.webp";
 import ea_logo from "../assets/img/webp/activitatisecundare/ea_logo2.webp";
 import hearth from "../assets/img/webp/activitatisecundare/hearth_fundal2.webp";
@@ -15,10 +13,13 @@ export default function ActivitatiSecundare() {
   return (
     <>
       {" "}
-      <div className="mb-20 lg:mb-32  w-full flex justify-center  font-extrabold leading-none tracking-tight text-[#78e800] text-1234xl lg:text-7xl md:text-5xl sm:text-3xl">
+      <div className="mb-5  w-full flex justify-center  font-extrabold leading-none tracking-tight text-[#78e800] text-1234xl lg:text-7xl md:text-5xl sm:text-3xl">
         Competiții Secundare
       </div>
-      <Countdown numarMinute={25920} text={"Înscrierile se termină în"} />
+      <Countdown
+        numarMinute={25920}
+        text={"Înscrierile se pot face si in ziua evenimentului"}
+      />
       <ul id="cards">
         {/* tft */}
         <li className="tft">
@@ -114,28 +115,6 @@ export default function ActivitatiSecundare() {
           </a>
         </li>
         {/* clash */}
-        <li className="clash_royale">
-          <a target="_blank" href="https://www.counter-strike.net/news">
-            <div className="w-full h-full">
-              <img src={clash} alt="Imagine Clash Royale" />
-            </div>
-            <div className="hover">
-              <img src={clash_logo} alt="Imagine Logo Clash Royale" />
-              {/* <label>
-                            Click aici
-                        </label>
-                        <label>
-                            Pentru inscriere
-                        </label> */}
-              <p className="text-white text-center p-2">
-                Descoperă universul fascinant Clash Royale, un joc strategic ce
-                te provoacă să-ți construiești armata și să-ți demonstrezi
-                abilitățile în dueluri memorabile. Alătură-te acum și devino
-                stăpânul tacticii într-o lume plină de aventură!
-              </p>
-            </div>
-          </a>
-        </li>
       </ul>
     </>
   );

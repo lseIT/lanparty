@@ -32,8 +32,8 @@ export default function AboutLanparty() {
               Despre <span className=" text-color-accent">Lanparty</span>
             </h1>
           </div>
-          <div className="text-white text-xl md:text-3xl">
-            <p className=" text-center p-4 mx-4 font-semibold">
+          <div className="text-white text-xl  md:text-3xl">
+            <p className=" text-center md:p-4 md:mx-4 font-semibold text-sm md:text-2xl">
               LANParty este mai mult decât un simplu eveniment. Este o
               comunitate în care jucătorii se conectează, își împărtășesc
               experiențele și construiesc prietenii pe viață. În spatele
@@ -41,7 +41,7 @@ export default function AboutLanparty() {
               strălucească.
             </p>
 
-            <p className=" text-center p-4 mx-4 font-semibold">
+            <p className=" text-center md:p-4 md:mx-4 font-semibold text-sm md:text-2xl">
               Transformăm adrenalina în competiție, iar competiția în spectacol!
               Echipele noastre vor concura în jocurile cele mai îndrăgite ale
               momentului, demonstrând abilități și strategii impresionante.
