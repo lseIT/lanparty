@@ -23,7 +23,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className=" hidden lg:block">
+      <div className=" hidden lg:block z-10">
         <Parallax
           className="md:rounded-lg md:mb-40 w-full mt-2 md:mx-auto md:mt-7  rounded-xl h-1/2"
           strength={400}
@@ -32,7 +32,7 @@ const Banner = () => {
             <img
               src={DesktopBanner}
               alt="LanParty Banner"
-              className=" object-cover h-screen w-screen pr-24"
+              className=" object-cover h-screen w-screen pr-16 flex justify-center items-center "
             />
           </Background>
           <div className="mx-auto px-4 py-32 lg:flex lg:h-xl lg:items-center">

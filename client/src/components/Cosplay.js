@@ -53,7 +53,7 @@ function Cosplay() {
           </div>
           <div className="flex-wrap rounded-lg pb-16  ">
             <div
-              className="relative md:w-4/6 w-4/5 rounded-lg mx-auto mt-16 border border-[#78e800] shadow-inner bg-[#78e800] "
+              className="relative w-[90%] md:w-4/6 w-4/5 rounded-lg mx-auto mt-16 border-4 border-[#78e800] shadow-inner bg-[#78e800] "
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
