@@ -166,7 +166,11 @@
     }
     *{
       scroll-behavior: smooth;
-
+    }
+    a{
+      
+      color:#ffffff;
+      text-decoration: none;
     }
     #cards .tft a:hover::after {
       background: rgba(53, 53, 81, 0.82);

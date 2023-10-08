@@ -5,17 +5,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AboutLanparty from "../components/AboutLanparty";
 import AboutUs from "../components/AboutUs";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Numere from "../components/Numere";
 import PartenerMedia from "../components/PartenerMedia";
-import Galery from "../components/Galery";
 import ButoanePrincipale from "../components/ActivitatiPrincipale";
 import ActivitatiSecundare from "../components/ActivitatiSecundare";
 import Cosplay from "../components/Cosplay";
 import Bara from "../assets/img/webp/General usage/ELEMENt fundal.webp";
-import Countdown from "../components/Countdown";
 import Ambasadori from "../components/Ambasadori";
 import Album from "../components/Album";
 import Banner from "../components/Banner";
+import Stats from "../components/Stats";
 export default function Home() {
   return (
     <>
@@ -40,17 +38,17 @@ export default function Home() {
           <div id="AboutLAN" className=" pt-0">
             <AboutLanparty />
           </div>
-
-          <Ambasadori />
-
-          <div id="PartenerMedia" className=" pt-32">
+          <div id="Ambasadori">
+            <Ambasadori />
+          </div>
+          <div id="Parteneri" className=" pt-32">
             <PartenerMedia />
           </div>
 
           {/* Sponsori */}
 
           <AboutUs />
-          <Numere />
+          <Stats />
           {/* Testimoniale */}
 
           <div id="Galerie" className=" lg:m-24 lg:px-24 lg:py-30">
