@@ -48,10 +48,10 @@ const Countdown = ({ numarMinute, text }) => {
 
   return (
     <>
-      <h1 className=" text-color-accent text-sm md:text-xl flex justify-center">
+      <h1 className=" text-color-accent text-base md:text-xl flex justify-center">
         {text}
       </h1>
-      <div className="w-full flex justify-center text-[#78e800] md:scale-x-100 scale-x-50 mb-24">
+      <div className="w-full flex justify-center text-[#78e800] md:scale-[100%] scale-[40%] mb-24">
         <div className="time-section">
           <div className="time text-8xl font-extrabold">
             {state.days || "0"}
