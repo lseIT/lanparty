@@ -8,7 +8,7 @@ import Countdown from "./Countdown";
 export default function ButoanePrincipale() {
   return (
     <ul id="cards">
-      <div className="mb-20 lg:mb-32  w-full flex justify-center  font-extrabold leading-none tracking-tight text-[#78e800] text-1234xl lg:text-7xl md:text-5xl sm:text-3xl">
+      <div className="mb-20 lg:mb-32  w-full flex justify-center  font-extrabold leading-none tracking-tight text-[#78e800] pr-1  md:ml-0  text-1234xl lg:text-7xl md:text-5xl sm:text-3xl">
         Competiții principale
       </div>
       <Countdown numarMinute={0} text={"Înscrierile se termină în"} />

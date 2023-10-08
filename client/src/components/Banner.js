@@ -40,7 +40,7 @@ const Banner = () => {
           </div>
         </Parallax>
       </div>
-      <div className="block lg:hidden">
+      <div className="block lg:hidden flex items-center justify-center">
         <Parallax
           className="md:rounded-lg w-full mt-2 md:mx-auto md:mt-7  rounded-xl h-1/2"
           strength={400}
