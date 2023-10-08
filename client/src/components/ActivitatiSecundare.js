@@ -13,14 +13,14 @@ export default function ActivitatiSecundare() {
   return (
     <>
       {" "}
-      <div className="mb-5  w-full flex justify-center  font-extrabold leading-none tracking-tight text-[#78e800] text-1234xl lg:text-7xl md:text-5xl sm:text-3xl">
+      <div className="mb-5 w-full flex justify-center  font-extrabold leading-none tracking-tight text-[#78e800] text-1234xl lg:text-7xl md:text-5xl sm:text-3xl">
         Competiții Secundare
       </div>
       <Countdown
         numarMinute={25920}
         text={"Înscrierile se pot face si in ziua evenimentului"}
       />
-      <ul id="cards">
+      <ul id="cards" className="grid grid-cols-2 gap-4">
         {/* tft */}
         <li className="tft">
           <a target="_blank" href="https://support.riotgames.com/hc/en-us">

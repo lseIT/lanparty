@@ -1,8 +1,24 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import ColajCosplay from "../assets/img/ColajCosplay.webp";
 
 function Cosplay() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mobileMediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mobileMediaQuery.matches);
+
+    const handleResize = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    mobileMediaQuery.addListener(handleResize);
+    return () => {
+      mobileMediaQuery.removeListener(handleResize);
+    };
+  }, []);
+
   const googleFormLink =
     "https://docs.google.com/forms/d/e/1FAIpQLSdLoKugg4QfKFswpmC5U7SqViCXDBDE5tfmpzFNRiJiUcbQsw/viewform?usp=sharing";
   const [isHovered, setIsHovered] = React.useState(false);
@@ -35,9 +51,9 @@ function Cosplay() {
             <text>COS</text>
             <text className="text-[#78e800]">PLAY</text>
           </div>
-          <div className="flex-wrap rounded-lg pb-16">
+          <div className="flex-wrap rounded-lg pb-16  ">
             <div
-              className="relative md:w-4/6 w-4/5 rounded-lg mx-auto mt-16"
+              className="relative md:w-4/6 w-4/5 rounded-lg mx-auto mt-16 border border-[#78e800] shadow-inner bg-[#78e800] "
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
@@ -52,17 +68,24 @@ function Cosplay() {
                   alt="Imagine cu un colaj cosplay"
                 />
                 <div className="pointer-events-none absolute top-0 opacity-80 left-0 w-full h-full flex flex-col items-center justify-center">
-                  <span className="md:text-3xl text-xs text-white hover:duration-300 hover:bg-opacity-0 bg-black px-2 py-1 rounded">
-                    Competiția cosplay la LanParty LSE: tehnologia întâlnește
-                    arta și pasiunea.
+                  <span
+                    className={`md:text-2xl text-xs duration-75 text-black hover:duration-300 hover:bg-opacity-0 bg-[#78e800] px-2 py-1 rounded ${
+                      !isHovered ? "opacity-100" : "opacity-0"
+                    } `}
+                  >
+                    <span className="md:text-2xl text-xs text-center">
+                      {isMobile
+                        ? "Competiția cosplay la LanParty LSE: CLICK AICI PENTRU ÎNSCRIERE"
+                        : "Competiția cosplay la LanParty LSE: tehnologia întâlnește arta și pasiunea."}
+                    </span>
                   </span>
                 </div>
                 <div
-                  className={`pointer-events-none absolute bottom-2/3 left-1/2 bg-opacity-100 transform -translate-x-1/2 bg-[#78e800] md:px-2 md:py-1 rounded transition-opacity duration-300 ${
+                  className={`pointer-events-none absolute bottom-2/3 left-1/2 bg-opacity-100 transform -translate-x-1/2  md:px-2 md:py-1 rounded transition-opacity duration-300 ${
                     isHovered ? "opacity-85" : "opacity-0"
-                  }`}
+                  } ${isMobile ? "opacity-0" : "bg-[#78e800]"} `}
                 >
-                  <span className="text-xs sm:text-sm md:text-xl lg:text-2xl xl:text-3xl text-white whitespace-nowrap">
+                  <span className="text-xs sm:text-sm md:text-xl lg:text-2xl xl:text-3xl text-black whitespace-nowrap">
                     CLICK AICI PENTRU ÎNSCRIERE
                   </span>
                 </div>
