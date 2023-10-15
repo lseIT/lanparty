@@ -13,21 +13,23 @@ export default function Footer() {
         <span className="p-2 md:p-0">
           Departamentul IT © 2023. Toate drepturile rezervate.
         </span>
-        <span className="p-2 md:p-0">Terms · Privacy Policy </span>
-        <div className="grid grid-cols-3 w-32 m-auto p-3 md:-translate-y-1">
+        <span className="p-2 md:p-0">
+          {/*Terms · Privacy Policy*/}
+        </span>
+        <div className="grid grid-cols-3 w-32 gap-4 m-auto p-3 md:-translate-y-1">
           <a
-            href="https://www.instagram.com/ligastudentilorelectronistilse/"
+              href="https://www.facebook.com/lseorgro"
+              target="_blank"
+              rel="noreferrer"
+          >
+            <FaFacebookSquare size={25} />
+          </a>
+          <a
+            href="https://www.instagram.com/lanparty.lse/"
             target="_blank"
             rel="noreferrer"
           >
             <BsInstagram size={25} />
-          </a>
-          <a
-            href="https://www.facebook.com/lseorgro"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaFacebookSquare size={25} />
           </a>
           <a
             href="https://www.youtube.com/@lsebucuresti"

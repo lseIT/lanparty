@@ -11,7 +11,9 @@ export default function NavBar() {
   return (
     <>
       <div className=" sticky top-0 z-10 rounded-div flex items-center justify-between h-20 font-bold w-full bg-black text-white">
+        <a href="/">
         <img src={logo_LANPARTY} className="w-36 h-20" />
+        </a>
         <div className=" hidden md:block">
           <a
             href="#Inscrieri"
