@@ -2,8 +2,8 @@ import React, { useRef, useState, useEffect } from "react";
 import { Parallax, Background } from "react-parallax";
 
 //Assets
-import DesktopBanner from "../assets/img/webp/Cover/Cover site - web.png";
-import MobileBanner from "../assets/img/webp/Cover/Cover site - mobil.png";
+import DesktopBanner from "../assets/img/webp/Cover/Cover site - web.webp";
+import MobileBanner from "../assets/img/webp/Cover/Cover site - mobil.webp";
 
 //Packages
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -23,7 +23,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className=" hidden lg:block z-10">
+      <div className=" hidden lg:block z-10 mt-32">
         <Parallax
           className="md:rounded-lg md:mb-40 w-full mt-2 md:mx-auto md:mt-7  rounded-xl h-1/2"
           strength={400}
@@ -32,7 +32,7 @@ const Banner = () => {
             <img
               src={DesktopBanner}
               alt="LanParty Banner"
-              className=" object-cover h-screen w-screen pr-16 flex justify-center items-center "
+              className="  h-full w-full  flex justify-center items-center"
             />
           </Background>
           <div className="mx-auto px-4 py-32 lg:flex lg:h-xl lg:items-center">

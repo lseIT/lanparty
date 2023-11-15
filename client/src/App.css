@@ -159,10 +159,10 @@
     }
 
     #cards .lol a:hover::after {
-      background: rgba(53, 53, 81, 0.82);
+      background: #0E1E00;
     }
     #cards .cs a:hover::after {
-      background: rgba(229, 167, 87, 0.87);
+      background: #0E1E00;
     }
     *{
       scroll-behavior: smooth;
@@ -173,17 +173,17 @@
       text-decoration: none;
     }
     #cards .tft a:hover::after {
-      background: rgba(53, 53, 81, 0.82);
+      background: #0E1E00;
     }
     #cards .ea a:hover::after {
-      background: rgba(142, 142, 186, 0.82);
+      background: #0E1E00;
     }
     #cards .hearth a:hover::after {
-      background: rgba(50, 105, 168, 0.82);
+      background: #0E1E00;
     }
     #cards .mk a:hover::after {
-      background: rgba(65, 30, 69, 0.82);
+      background:#0E1E00;
     }
     #cards .clash_royale a:hover::after {
-      background: rgba(66, 132, 231, 0.82);
+      background: #0E1E00;
     }

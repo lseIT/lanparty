@@ -7,7 +7,7 @@ function TikTokButton(followers, appName) {
   const greenRatio = 1 - whiteRatio;
 
   return (
-    <button className="flex mx-4 hover:duration-300">
+    <button className="flex mx-4 h-full w-full gap-10 hover:duration-300">
       <a
         className="font-bold no-underline"
         href="https://www.tiktok.com/@allstarsgamingro"
@@ -15,13 +15,14 @@ function TikTokButton(followers, appName) {
         rel="noopener noreferrer"
       >
         <span
-          className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
+          className=" rounded-l-lg text-black hover:bg-[#FFFFFF] hover:duration-300 h-full w-full  bg-[#78e800] px-10 py-3 rounded mr-[-2rem]"
           style={{ flex: whiteRatio }}
         >
           {followers}
         </span>
+
         <span
-          className="rounded-lg text-black hover:bg-[#325e1f] hover:duration-300 bg-[#78e800] px-10 py-3"
+          className="rounded-lg text-black hover:bg-[#78e800] h-full w-full  hover:duration-300 bg-[#FFFFFF] px-10 py-3"
           style={{ flex: greenRatio }}
         >
           {appName}
@@ -44,14 +45,15 @@ function InstagramButton(followers, appName) {
         rel="noopener noreferrer"
       >
         <span
-          className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
-          style={{ flex: whiteRatio }}
+            className=" rounded-l-lg text-black hover:bg-[#FFFFFF] hover:duration-300 h-full w-full  bg-[#78e800] px-10 py-3 rounded mr-[-2rem]"
+            style={{ flex: whiteRatio }}
         >
           {followers}
         </span>
+
         <span
-          className="rounded-lg text-black hover:bg-[#325e1f] hover:duration-300 bg-[#78e800] px-10 py-3"
-          style={{ flex: greenRatio }}
+            className="rounded-lg text-black hover:bg-[#78e800] h-full w-full  hover:duration-300 bg-[#FFFFFF] px-10 py-3"
+            style={{ flex: greenRatio }}
         >
           {appName}
         </span>
@@ -73,14 +75,15 @@ function YouTubeButton(followers, appName) {
         rel="noopener noreferrer"
       >
         <span
-          className="rounded-l-lg text-black hover:bg-[#3d3d3d] hover:duration-300  bg-[#FFFFFF] px-10 py-2"
-          style={{ flex: whiteRatio }}
+            className=" rounded-l-lg text-black hover:bg-[#FFFFFF] hover:duration-300 h-full w-full  bg-[#78e800] px-10 py-3 rounded mr-[-2rem]"
+            style={{ flex: whiteRatio }}
         >
           {followers}
         </span>
+
         <span
-          className="rounded-lg text-black hover:bg-[#325e1f] hover:duration-300 bg-[#78e800] px-10 py-3"
-          style={{ flex: greenRatio }}
+            className="rounded-lg text-black hover:bg-[#78e800] h-full w-full  hover:duration-300 bg-[#FFFFFF] px-10 py-3"
+            style={{ flex: greenRatio }}
         >
           {appName}
         </span>
@@ -157,7 +160,7 @@ function PartenerMedia() {
             REACH ESTIMATIV
           </button>
         </div>
-        <div className="flex justify-center flex-wrap">
+        <div className="flex justify-center flex-wrap h-full w-full gap-10 md:gap-0">
           <span className="m-3">{TikTokButton("171k", "TikTok")}</span>
           <span className="m-3">{InstagramButton("117k", "Instagram")}</span>
           <span className="m-3">{YouTubeButton("1.07M", "YouTube")}</span>

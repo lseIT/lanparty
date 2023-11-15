@@ -1,12 +1,13 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import poza1 from "../assets/img/webp/gallery/poze-lan-1.webp";
-import poza2 from "../assets/img/webp/gallery/poze-lan-7.webp";
-import poza3 from "../assets/img/webp/gallery/poze-lan-3.webp";
-import poza4 from "../assets/img/webp/gallery/poze-lan-8.webp";
-import poza5 from "../assets/img/webp/gallery/poze-lan-5.webp";
-import poza6 from "../assets/img/webp/gallery/poze-lan-6.webp";
+
+import poza1 from "../assets/img/ambasadori/50.webp";
+import poza2 from "../assets/img/ambasadori/52.webp";
+import poza3 from "../assets/img/ambasadori/53.webp";
+import poza4 from "../assets/img/ambasadori/47.webp";
+import poza5 from "../assets/img/ambasadori/48.webp";
+import poza6 from "../assets/img/ambasadori/49.webp";
 
 const MyCarousel = () => {
   return (

@@ -36,15 +36,15 @@ export default function AboutUs() {
             <h1 className="uppercase md:text-5xl text-3xl text-white font-bold justify-center flex">
               Despre <span className="text-[#78e800] pl-4">Noi</span>
             </h1>
-            <div className="flex justify-center mt-6">
-              <img src={LogoWhite} alt="Logo" />
+            <div className="flex justify-center mt-20 h-full scale-150">
+              {/*<img src={LogoWhite} alt="Logo" />*/}
             </div>
             <div className="self-center justify-center flex font-bold text-center text-white text-2xl md:text-3xl pt-6">
               <p>Liga Studenților Electroniști</p>
             </div>
             <div>
               <p className="text-white md:text-2xl text-xl font-medium text-center p-4 m-4">
-                este organizația studențească din cadrul Facultății de
+                Este organizația studențească din cadrul Facultății de
                 Electronică, Telecomunicații și Tehnologia Informației, care în
                 decursul a peste 30 de ani de activitate a reușit să reprezinte
                 cu succes interesele studenților prin implementarea unor
@@ -53,7 +53,7 @@ export default function AboutUs() {
               </p>
             </div>
             <div>
-              <div className=" lg:flex justify-center md:gap-10 grid grid-cols-1 place-items-center  ">
+              <div className=" lg:flex justify-center md:gap-10 grid grid-cols-1 place-items-center ">
                 <AboutUsCard name="Electron" logo={LogoWhite} />
                 <AboutUsCard name="RoboChallenge" logo={LogoWhite} />
                 <AboutUsCard name="Aleargă pentru viață" logo={LogoWhite} />

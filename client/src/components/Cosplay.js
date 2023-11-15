@@ -73,7 +73,7 @@ function Cosplay() {
                       !isHovered ? "opacity-100" : "opacity-0"
                     } `}
                   >
-                    <span className="md:text-2xl text-xs text-center">
+                    <span className="flex justify-center md:text-2xl text-xs text-center">
                       {isMobile
                         ? "Competiția cosplay la LanParty LSE: CLICK AICI PENTRU ÎNSCRIERE"
                         : "Competiția cosplay la LanParty LSE: tehnologia întâlnește arta și pasiunea."}

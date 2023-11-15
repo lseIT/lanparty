@@ -28,14 +28,14 @@ export default function Home() {
         <div className="col-span-10 bg-black h-screen overflow-auto no-scrollbar ">
           <Header />
           <Banner />
-          <div id="Inscrieri" className=" pt-0">
+          <div id="Inscrieri" className="md:mt-60 pt-0">
             {/* De la ora 00 : 00 se incepe calculul */}
             <ButoanePrincipale />
             <ActivitatiSecundare />
             <Cosplay />
           </div>
 
-          <div id="AboutLAN" className=" pt-0">
+          <div id="AboutLAN" className="pt-0">
             <AboutLanparty />
           </div>
           <div id="Ambasadori">
