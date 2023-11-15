@@ -14,6 +14,8 @@ import Ambasadori from "../components/Ambasadori";
 import Album from "../components/Album";
 import Banner from "../components/Banner";
 import Stats from "../components/Stats";
+import Locatie from "../components/Locatie";
+import Program from "../components/Program";
 export default function Home() {
   return (
     <>
@@ -30,6 +32,8 @@ export default function Home() {
           <Banner />
           <div id="Inscrieri" className=" pt-0">
             {/* De la ora 00 : 00 se incepe calculul */}
+            <Locatie />
+            <Program />
             <ButoanePrincipale />
             <ActivitatiSecundare />
             <Cosplay />
