@@ -1,0 +1,12 @@
+name: lanparty-v2
+region: eu-central-1
+yamlVersion: 2
+frontend:
+    path: client
+    publish: build
+    scripts:
+        deploy:
+            - npm install
+        build:
+            - npm run build
+    subdomain: amber-casual-leech
